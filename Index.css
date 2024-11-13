@@ -1,7 +1,10 @@
 /*CSS DE LOS ICONOS DE LA NAV-BAR*/
+body{
+    margin: 0;
+}
 .navbar {
     background-color: #0b2a42; 
-    padding: 15px 0;
+    padding:15px 0;
     font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
@@ -9,6 +12,7 @@
     width: 100%; 
     position: relative;
     box-sizing: border-box;
+
 }
 
 .navbar-container {
@@ -77,6 +81,8 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
     z-index: 1000;
     border-radius: 5px;
+    width: 209px;
+    
 }
 
 .nav-item:hover .dropdown-menu {
@@ -97,6 +103,10 @@
     background-color: #7c5ce2; 
     color: #ffffff; 
 }
+.logo-img{
+    width: 210px;
+}
+
 
 ul {
     list-style: none;
