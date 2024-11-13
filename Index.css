@@ -1,6 +1,12 @@
 /*CSS DE LOS ICONOS DE LA NAV-BAR*/
 body{
+    font-family: 'Arial', sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+    background: linear-gradient(to right, #0b1a38 5%, #9177d7 95%);
+    height: 100vh;
 }
 .navbar {
     background-color: #0b2a42; 
@@ -41,7 +47,6 @@ body{
 .navbar-nav .nav-link {
     color: #ffffff; 
     font-size: 18px;
-    font-weight: 500; 
     text-transform: capitalize;
     text-decoration: none; 
     transition: color 0.3s;
@@ -116,6 +121,101 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+/* Estilo del Header */
+.header-section {
+    padding: 100px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    width: 91%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.header-text {
+    color: #ffffff;
+    flex: 1;
+}
+
+.header-text h1 {
+    font-size: 80px; /* Tamaño incrementado para mejor visibilidad */
+    font-weight: bold;
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
+
+.header-text h1 .highlight {
+    color: #7c5ce2;
+    font-size: 90px;
+}
+
+.header-text h1 .cursor {
+    color: #ffffff;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.header-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-item img {
+    width: 50px; /* Tamaño de los íconos */
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon-item span {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Imagen del Header */
+.header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-image img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header-image .floating-image {
+    position: absolute;
+    bottom: -70px;
+    right: -50px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }
 
 
