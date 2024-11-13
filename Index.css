@@ -16,7 +16,9 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%; 
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     box-sizing: border-box;
 
 }
@@ -54,12 +56,12 @@ body{
 }
 
 .navbar-nav .nav-link:hover {
-    color: #7c5ce2; 
-    border-bottom: 2px solid #7c5ce2; 
+    color: #7f61df; 
+    border-bottom: 2px solid #7f61df; 
 }
 
 .btn-contact-us {
-    background-color: #7c5ce2; 
+    background-color: #562ed9; 
     color: #ffffff;
     font-size: 16px;
     font-weight: bold; 
@@ -127,6 +129,7 @@ a {
 .header-section {
     padding: 100px 100px;
     display: flex;
+    padding-top: 180px;
     align-items: center;
     justify-content: center;
 }
@@ -147,7 +150,7 @@ a {
 }
 
 .header-text h1 {
-    font-size: 80px; /* Tamaño incrementado para mejor visibilidad */
+    font-size: 80px;
     font-weight: bold;
     margin: 0 0 20px;
     line-height: 1.2;
@@ -159,7 +162,7 @@ a {
 }
 
 .header-text h1 .cursor {
-    color: #ffffff;
+    color: #7c5ce2;
     animation: blink 1s steps(1) infinite;
 }
 
@@ -183,7 +186,7 @@ a {
 }
 
 .icon-item img {
-    width: 50px; /* Tamaño de los íconos */
+    width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
@@ -218,8 +221,57 @@ a {
     border-radius: 10px;
 }
 
+/* Estilo de la sección "Nuestro modelo de Gestión" */
+.modelo-gestion-section {
+    padding: 50px 20px; 
+    background: linear-gradient(to right, #0b1a38, #9177d7);
+    color: #ffffff;
+}
 
+.modelo-gestion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.modelo-gestion-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    text-align: left; 
+    color: #ffffff;
+}
+
+.modelo-diagrama {
+    width: 100%;
+    max-width: 1500px; /* Imagen más grande */
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    background: #ffffff;
+    overflow: hidden; /* Asegura que los bordes redondeados afecten */
+    position: relative; /* Necesario para efectos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+
+.modelo-diagrama:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Incrementa la sombra al hacer hover */
+    transform: scale(1.02); /* Zoom leve al hacer hover */
+}
+
+.modelo-diagrama img {
+    width: 100%;
+    border-radius: 10px;
+    transform: translateY(50px); /* Posición inicial para aparición */
+    opacity: 0; /* Invisible inicialmente */
+    transition: transform 0.6s ease, opacity 0.6s ease; /* Suavidad de animación */
+}
+.modelo-diagrama img.appear {
+    transform: translateY(0); /* Alineado en su posición final */
+    opacity: 1; /* Completamente visible */
+}
 
 /*CSS DE LOS ICONOS DE LAS REDES SOCIALES*/
 .social-icons {
