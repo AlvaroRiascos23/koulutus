@@ -12,12 +12,9 @@
         <!-- Incluye la Navbar -->
         <nav class="navbar">
             <div class="navbar-container">
-                <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
                     <img src="Imagenes/logo-light.svg" alt="Logo" class="logo-img">
                 </a>
-
-                <!-- Menú -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
@@ -44,9 +41,80 @@
             </div>
         </nav>
 
-        <header>
-            
+        <!-- HEADER -->
+        <header class="header-section">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1><span>CRECEMOS</span> <span class="highlight">JUNTOS</span><span class="cursor">|</span></h1>
+                    <div class="header-icons">
+                        <div class="icon-item">
+                            <img src="Imagenes/icon-asesorias.png" alt="Asesorías">
+                            <span>Asesorías</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="Imagenes/icon-empresas.png" alt="Empresas">
+                            <span>Empresas</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="Imagenes/icon-emprendedores.png" alt="Emprendedores">
+                            <span>Emprendedores</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="Imagenes/Woman-banner.png" alt="Educando y Transformando">
+                </div>
+            </div>
         </header>
+
+        <!-- MODELO GESTION -->
+        <section class="modelo-gestion-section">
+            <div class="modelo-gestion-content">
+                <h2>Nuestro modelo de Gestión:</h2>
+                <div class="modelo-diagrama">
+                    <img src="Imagenes/post-banner.jpeg" alt="Modelo de Gestión">
+                </div>
+            </div>
+        </section>
+
+        <!-- INFO-SECTION -->
+        <section class="info-section">
+            <div class="info-block">
+                <div class="info-image">
+                    <img src="Imagenes/DesarrolloSocial.jpeg" alt="Desarrollo Social">
+                </div>
+                <div class="info-text">
+                    <h3>Desarrollo Social</h3>
+                    <p>
+                        Contamos con un amplio conocimiento del territorio Colombiano y de las necesidades para el desarrollo Educativo, Social, Tecnológico y Cultural.
+                        <a href="#">Trabajamos de la mano de aliados y entidades territoriales</a> para acompañar proyectos de desarrollo social y empoderar las comunidades a las que llegamos.
+                    </p>
+                </div>
+            </div>
+            <div class="info-block">
+                <div class="info-image">
+                    <img src="Imagenes/skills.svg" alt="Generation Developers">
+                </div>
+                <div class="info-text">
+                    <h3>Generation Developers</h3>
+                    <p>
+                        Contamos con un equipo con enfoque proactivo, creativo y colaborativo que agrega valor a tu organización a través de la innovación digital con soluciones a medida.
+                        <a href="#">Trabajamos para satisfacer las necesidades de su empresa</a> brindando servicios integrales de consultoría y entregando soluciones a través de aplicaciones web y móviles, gestión de redes sociales, creación de bases de datos, desarrollo de aplicaciones complejas y soluciones de computación en la nube.
+                    </p>
+                </div>
+            </div>
+            <div class="info-block">
+                <div class="info-image">
+                    <img src="Imagenes/Screenshot 2024-11-13 215809.jpg" alt="Generation Developers">
+                </div>
+                <div class="info-text">
+                    <h3>Aprovechamiento Tecnológico (by Marvaltech)</h3>
+                    <p>
+                        Contamos con un equipo especializado en los equipos electrónicos para ofrecer los mejores servicios de aprovechamiento. Trabajamos en la compra, venta, soporte, mantenimiento, recuperación y reuso de equipos electrónicos.
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <!-- Incluye los iconos de redes sociales -->
         <div class="social-icons">
@@ -67,6 +135,42 @@
             </div>
         </div>
         
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const image = document.querySelector('.modelo-diagrama img');
+                const infoBlocks = document.querySelectorAll('.info-block');
+        
+                const handleScroll = () => {
+                    const screenPosition = window.innerHeight / 1.3;
+        
+                    // Efecto para la imagen dentro del modelo-diagrama
+                    if (image) {
+                        const imagePosition = image.getBoundingClientRect().top;
+        
+                        if (imagePosition < screenPosition) {
+                            image.classList.add('appear');
+                        } else {
+                            image.classList.remove('appear');
+                        }
+                    }
+        
+                    // Efecto para los info-blocks
+                    infoBlocks.forEach((block) => {
+                        const blockPosition = block.getBoundingClientRect().top;
+        
+                        if (blockPosition < screenPosition && blockPosition > 0) {
+                            block.classList.add('appear');
+                        } else {
+                            block.classList.remove('appear');
+                        }
+                    });
+                };
+        
+                // Escuchar el evento scroll
+                window.addEventListener('scroll', handleScroll);
+                handleScroll();
+            });
+        </script>        
     </div>
 </body>
 </html>
