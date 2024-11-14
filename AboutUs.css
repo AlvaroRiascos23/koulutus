@@ -264,9 +264,9 @@ h2{
 }
 
 .value-icon {
-    font-size: 40px; /* Tamaño del ícono */
+    font-size: 45px; /* Tamaño del ícono */
     color: #7548f1; /* Color principal */
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .value-card h3 {
