@@ -127,7 +127,7 @@ a {
 
 /* Estilo del Header */
 .header-section {
-    padding: 100px 100px;
+    padding: 100px 250px;
     display: flex;
     padding-top: 180px;
     align-items: center;
@@ -223,8 +223,7 @@ a {
 
 /* Estilo de la sección "Nuestro modelo de Gestión" */
 .modelo-gestion-section {
-    padding: 50px 20px; 
-    background: linear-gradient(to right, #0b1a38, #9177d7);
+    padding: 100px 0px; 
     color: #ffffff;
 }
 
@@ -232,7 +231,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -246,32 +245,119 @@ a {
 
 .modelo-diagrama {
     width: 100%;
-    max-width: 1500px; /* Imagen más grande */
+    max-width: 2000px; 
     margin-top: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
-    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
     background: #ffffff;
-    overflow: hidden; /* Asegura que los bordes redondeados afecten */
-    position: relative; /* Necesario para efectos */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+    overflow: hidden; 
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .modelo-diagrama:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Incrementa la sombra al hacer hover */
-    transform: scale(1.02); /* Zoom leve al hacer hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.02); 
 }
 
 .modelo-diagrama img {
     width: 100%;
     border-radius: 10px;
-    transform: translateY(50px); /* Posición inicial para aparición */
-    opacity: 0; /* Invisible inicialmente */
-    transition: transform 0.6s ease, opacity 0.6s ease; /* Suavidad de animación */
+    transform: translateY(50px); 
+    opacity: 0; 
+    transition: transform 0.6s ease, opacity 0.6s ease; 
 }
 .modelo-diagrama img.appear {
-    transform: translateY(0); /* Alineado en su posición final */
-    opacity: 1; /* Completamente visible */
+    transform: translateY(0); 
+    opacity: 1; 
 }
+
+/* Estilo general para la sección */
+.info-section {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Bloque individual */
+.info-block {
+    display: flex;
+    flex-direction: row;
+    max-width: 1250px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.411);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: transform 0.6s ease, opacity 0.6s ease; 
+}
+
+
+.info-block.appear {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* Imagen del bloque */
+.info-image {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Texto del bloque */
+.info-text {
+    flex: 1;
+    padding: 20px 30px;
+    color: #ffffff;
+}
+
+.info-text h3 {
+    color: #0b1a38;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.info-text a {
+    color: #7c5ce2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.info-text a:hover {
+    color: #ffffff;
+}
+
+/* Efecto hover */
+.info-block:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
 
 /*CSS DE LOS ICONOS DE LAS REDES SOCIALES*/
 .social-icons {
