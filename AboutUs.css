@@ -200,7 +200,7 @@ body {
 }
 
 #about-text {
-    max-height: 222px;  /* Limita el tamaño inicial del texto */
+    max-height: 250px;  /* Limita el tamaño inicial del texto */
     overflow: hidden;  /* Oculta el texto que excede el límite */
     transition: max-height 0.3s ease-out;  /* Animación suave al expandir */
 }
@@ -209,6 +209,7 @@ body {
     justify-content: center;  /* Centra horizontalmente */
     margin-top: 10px;  /* Pequeño espacio entre el texto y el botón */
 }
+
 #toggle-btn {
     display: block;
     margin-top: 12px;
@@ -224,6 +225,61 @@ body {
     margin-bottom: 20px;  /* Espacio debajo del botón */
     
 }
+h2{
+    text-align: center;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-gap: 2px; /* Espacio entre tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Centra las tarjetas verticalmente */
+    margin: 10px auto; /* Centramos el contenedor en la página */
+    max-width: 800px; /* Ancho máximo del contenedor */
+}
+/* Ajuste para la última tarjeta centrada */
+.card-container .value-card:last-child {
+    grid-column: 1 / -1; /* Ocupa toda la fila */
+    justify-self: right; /* Centra la tarjeta */
+}
+
+/* Estilo para las tarjetas */
+.value-card {
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #18326746;
+    transition: transform 0.2s ease-in-out; /* Transición suave */
+}
+
+/* Efecto de "salto" al pasar el cursor */
+.value-card:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Incrementa la sombra */
+}
+
+.value-icon {
+    font-size: 40px; /* Tamaño del ícono */
+    color: #7548f1; /* Color principal */
+    margin-bottom: 15px;
+}
+
+.value-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.value-card p {
+    font-size: 16px;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .navbar-nav {
         flex-direction: column;
@@ -247,5 +303,10 @@ body {
         bottom: 10px;
         right: 10px;
         gap: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Una sola columna */
     }
 }
