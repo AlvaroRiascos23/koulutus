@@ -1,5 +1,4 @@
 /*CSS DE LOS ICONOS DE LA NAV-BAR*/
-
 .navbar {
     background-color: #0b2a42; 
     padding:15px 0;
@@ -14,11 +13,11 @@
     left: 0;
     right: 0;
     transition: background-color 0.3s ease;
-    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+    z-index: 1000; 
 
 }
 .navbar.scrolled {
-    background-color: #0b2a42a3/* Color cuando se hace scroll */
+    background-color: #0b2a42a3
   
 }
 .nav-link.scrolled {
@@ -135,7 +134,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden; 
-    background: linear-gradient(to right, #0b1a38 5%, #9177d7 95%); /* Ajusta estos colores basándote en tu imagen */
+    background: linear-gradient(to right, #0b1a38 5%, #9177d7 95%); 
     height: 100vh;
 }
 
@@ -153,8 +152,8 @@ body {
     flex-direction: column;
     justify-content: center;
      /* Capa de superposición */
-     background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
-     background-blend-mode: overlay; /* Mezcla la imagen y el color */
+     background-color: rgba(0, 0, 0, 0.5); 
+     background-blend-mode: overlay; 
      
 }
 
@@ -169,9 +168,9 @@ body {
     font-size: 3rem;
     margin: 0;
     font-weight: bold;
-    text-align: center; /* Centra el h1 horizontalmente */
+    text-align: center; 
     top: 50%;
-    transform: translateY(-50%); /* Centra el h1 verticalmente */
+    transform: translateY(-50%); 
     position: absolute;
     width: 100%;
 }
@@ -179,37 +178,41 @@ body {
 .header-text p {
     font-size: 1rem;
     margin: 0;
-    text-align: justify; /* Justifica el texto */
+    text-align: justify; 
     position: absolute;
-    bottom: -180px; /* Ajusta la distancia desde el fondo */
+    bottom: -180px; 
     width: 100%;
     padding: 0 20px;
 }
-
+/*Efectos para la informacion de la primera section*/
 .about-section {
-    margin: 20px auto;  /* Centra la sección */
-    width: 62%;  /* Ajusta el ancho de la sección, puedes cambiar el porcentaje según lo necesites */
-    font-family: 'Arial', sans-serif;  /* Tipografía moderna */
-    color: white;  /* Color blanco para el texto */
-    padding: 20px;  /* Espaciado interno */
-    text-align: justify;  /* Justifica el texto */
+    margin: 20px auto;  
+    width: 62%;  
+    font-family: 'Arial', sans-serif;  
+    color: white;  
+    padding: 20px; 
+    text-align: justify; 
     line-height: 1.8;
-    font-size: 1.1rem;  /* Ajusta el tamaño de la fuente si es necesario */
-    max-width: 800px;  /* Limita el ancho del texto */
+    font-size: 1.1rem;  
+    max-width: 800px;  
 
 }
 
 #about-text {
-    max-height: 250px;  /* Limita el tamaño inicial del texto */
-    overflow: hidden;  /* Oculta el texto que excede el límite */
-    transition: max-height 0.3s ease-out;  /* Animación suave al expandir */
+    max-height: 250px;  
+    overflow: hidden;  
+    transition: max-height 0.3s ease-out; 
 }
 .button-container {
-    display: flex;  /* Usamos Flexbox para centrar */
-    justify-content: center;  /* Centra horizontalmente */
-    margin-top: 10px;  /* Pequeño espacio entre el texto y el botón */
+    display: flex;  
+    justify-content: center;  
+    margin-top: 10px;  
 }
-
+/*Titulos de la primera section*/
+h2{
+    text-align: center;
+}
+/*Boton ver mas*/
 #toggle-btn {
     display: block;
     margin-top: 12px;
@@ -221,27 +224,24 @@ body {
     cursor: pointer;
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
-    width: 11%;  /* Hace que el botón ocupe todo el ancho de la div */
-    margin-bottom: 20px;  /* Espacio debajo del botón */
+    width: 11%;  
+    margin-bottom: 20px;  
     
 }
-h2{
-    text-align: center;
-}
-
+/*Efectos tarjetas de valores*/
 .values-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    grid-gap: 2px; /* Espacio entre tarjetas */
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    align-items: center; /* Centra las tarjetas verticalmente */
-    margin: 10px auto; /* Centramos el contenedor en la página */
-    max-width: 800px; /* Ancho máximo del contenedor */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 2px; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px auto; 
+    max-width: 800px; 
 }
 /* Ajuste para la última tarjeta centrada */
 .card-container .value-card:last-child {
-    grid-column: 1 / -1; /* Ocupa toda la fila */
-    justify-self: right; /* Centra la tarjeta */
+    grid-column: 1 / -1; 
+    justify-self: right; 
 }
 
 /* Estilo para las tarjetas */
@@ -254,18 +254,18 @@ h2{
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #18326746;
-    transition: transform 0.2s ease-in-out; /* Transición suave */
+    transition: transform 0.2s ease-in-out; 
 }
 
 /* Efecto de "salto" al pasar el cursor */
 .value-card:hover {
-    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Incrementa la sombra */
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .value-icon {
-    font-size: 45px; /* Tamaño del ícono */
-    color: #7548f1; /* Color principal */
+    font-size: 45px; 
+    color: #7548f1; 
     margin-bottom: 5px;
 }
 
@@ -280,6 +280,7 @@ h2{
     color: white;
 }
 
+/*@medias para responsive*/
 @media (max-width: 768px) {
     .navbar-nav {
         flex-direction: column;
