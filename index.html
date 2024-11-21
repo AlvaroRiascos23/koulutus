@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koulutus/Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="Index.css">
 
 </head>
@@ -51,15 +52,15 @@
                     <h1><span>CRECEMOS</span> <span class="highlight">JUNTOS</span><span class="cursor">|</span></h1>
                     <div class="header-icons">
                         <div class="icon-item">
-                            <img src="Imagenes/icon-asesorias.png" alt="Asesorías">
+                            <i class="fa fa-headphones" style="color: yellow;"></i>
                             <span>Asesorías</span>
                         </div>
                         <div class="icon-item">
-                            <img src="Imagenes/icon-empresas.png" alt="Empresas">
+                            <i class="fa fa-briefcase" style="color: orange;"></i>
                             <span>Empresas</span>
                         </div>
                         <div class="icon-item">
-                            <img src="Imagenes/icon-emprendedores.png" alt="Emprendedores">
+                            <i class="fa fa-lightbulb" style="color: red;"></i>
                             <span>Emprendedores</span>
                         </div>
                     </div>
@@ -88,9 +89,9 @@
                 </div>
                 <div class="info-text">
                     <h3>Desarrollo Social</h3>
-                    <p>
+                    <p class="text-info">
                         Contamos con un amplio conocimiento del territorio Colombiano y de las necesidades para el desarrollo Educativo, Social, Tecnológico y Cultural.
-                        <a href="#">Trabajamos de la mano de aliados y entidades territoriales</a> para acompañar proyectos de desarrollo social y empoderar las comunidades a las que llegamos.
+                    <span class="text-info-2">Trabajamos de la mano de aliados y entidades territoriales para acompañar proyectos de desarrollo social y empoderar las comunidades a las que llegamos.</span>
                     </p>
                 </div>
             </div>
@@ -102,7 +103,7 @@
                     <h3>Generation Developers</h3>
                     <p>
                         Contamos con un equipo con enfoque proactivo, creativo y colaborativo que agrega valor a tu organización a través de la innovación digital con soluciones a medida.
-                        <a href="#">Trabajamos para satisfacer las necesidades de su empresa</a> brindando servicios integrales de consultoría y entregando soluciones a través de aplicaciones web y móviles, gestión de redes sociales, creación de bases de datos, desarrollo de aplicaciones complejas y soluciones de computación en la nube.
+                        <span class="text-info-2">Trabajamos para satisfacer las necesidades de su empresa</> brindando servicios integrales de consultoría y entregando soluciones a través de aplicaciones web y móviles, gestión de redes sociales, creación de bases de datos, desarrollo de aplicaciones complejas y soluciones de computación en la nube.</span>
                     </p>
                 </div>
             </div>
@@ -113,7 +114,7 @@
                 <div class="info-text">
                     <h3>Aprovechamiento Tecnológico (by Marvaltech)</h3>
                     <p>
-                        Contamos con un equipo especializado en los equipos electrónicos para ofrecer los mejores servicios de aprovechamiento. Trabajamos en la compra, venta, soporte, mantenimiento, recuperación y reuso de equipos electrónicos.
+                        Contamos con un equipo especializado en los equipos electrónicos para ofrecer los mejores servicios de aprovechamiento. <span class="text-info-2">Trabajamos en la compra, venta, soporte, mantenimiento, recuperación y reuso de equipos electrónicos.</span>
                     </p>
                 </div>
             </div>
@@ -124,7 +125,7 @@
                 <div class="info-text">
                     <h3>Otros servicios</h3>
                     <p>
-                        Ofrecemos diferentes servicios de formación asesoría y consultoría para empresas, pymes, ONG, instituciones educativas tanto oficiales como privadas, Entidades territoriales certificadas. Además, entregamos soluciones a medida a través de robótica y domótica Acompañamos, además, en la formulación de proyectos.                    </p>
+                        Ofrecemos <span class="text-info-2">diferentes servicios de formación asesoría y consultoría </span> para empresas, pymes, ONG, instituciones educativas tanto oficiales como privadas, Entidades territoriales certificadas. Además, entregamos <span class="text-info-2">soluciones a medida a través de robótica y domótica Acompañamos, además, en la formulación de proyectos.</span>                   </p>
                 </div>
             </div>
         </section>
@@ -180,7 +181,7 @@
         <!-- Incluye los iconos de redes sociales -->
         <div class="social-icons">
             <div class="scroll-to-top" id="scrollToTopButton">
-                <span>&uarr;</span>
+                <i class="fa fa-caret-up fa-2x" style="color: white;"></i>
             </div>
         
             <div class="social-icon">
@@ -214,7 +215,7 @@
                     const screenPosition = window.innerHeight / 1.3;
         
                     // Mostrar u ocultar el botón de "Ir hacia arriba"
-                    if (window.scrollY > 300) {
+                    if (window.scrollY > 350) {
                         scrollToTopButton.classList.add('visible');
                     } else {
                         scrollToTopButton.classList.remove('visible');
