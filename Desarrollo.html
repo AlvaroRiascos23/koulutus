@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koulutus/Inicio</title>
+    <title>Koulutus/Desarrollo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="Desarrollo.css">
     <link rel="icon" href="/Imagenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -22,7 +22,7 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="index.html">Portafolio</a>
+                        <a class="nav-link" href="Desarrollo.html">Portafolio</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo de software</a></li>
                             <li><a class="dropdown-item" href="GenerationDevelopers.html">Robotica y domotica</a></li>
@@ -51,106 +51,112 @@
             </div>
         </nav>
 
-        <!-- HEADER -->
-        <header class="header-section">
-            <div class="header-content">
-                <div class="header-text">
-                    <h1><span>CRECEMOS</span> <span class="highlight">JUNTOS</span><span class="cursor">|</span></h1>
-                    <div class="header-icons">
-                        <div class="icon-item">
-                            <i class="fa fa-headphones" style="color: yellow;"></i>
-                            <span>Asesorías</span>
-                        </div>
-                        <div class="icon-item">
-                            <i class="fa fa-briefcase" style="color: orange;"></i>
-                            <span>Empresas</span>
-                        </div>
-                        <div class="icon-item">
-                            <i class="fa fa-lightbulb" style="color: red;"></i>
-                            <span>Emprendedores</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-image">
-                    <img src="Imagenes/Woman-banner.png" alt="Educando y Transformando">
-                </div>
-            </div>
+         <!-- Header con imagen -->
+        <header class="header-image">
+            
         </header>
 
-        <!-- MODELO GESTION -->
-        <section class="modelo-gestion-section">
-            <div class="modelo-gestion-content">
-                <h2>Nuestro modelo de Gestión:</h2>
-                <div class="modelo-diagrama">
-                    <img src="Imagenes/post-banner.jpeg" alt="Modelo de Gestión">
-                </div>
-            </div>
-        </section>
+    <!-- SECCIÓN DE SERVICIOS -->
+<section id="servicios" class="services">
+    <div class="services-container">
+        <!-- Servicio 1 -->
+        <div class="service">
+            <img src="Imagenes/desarrollo1.png" alt="Servicio 1" class="service-img">
+            <h3>Soluciones a Medida</h3>
+            <p>Son soluciones de software desarrolladas específicamente para satisfacer las
+                necesidades particulares de una empresa, organización o usuario individual.</p>
+            <button class="btn-modal" onclick="openModal('modal1')">Ver más</button>
+        </div>
 
-        <!-- INFO-SECTION -->
-        <section class="info-section">
-            <div class="info-block">
-                <div class="info-image">
-                    <img src="Imagenes/DesarrolloSocial.jpeg" alt="Desarrollo Social">
-                </div>
-                <div class="info-text">
-                    <h3>Desarrollo Social</h3>
-                    <p class="text-info">
-                        Contamos con un amplio conocimiento del territorio Colombiano y de las necesidades para el desarrollo Educativo, Social, Tecnológico y Cultural.
-                    <span class="text-info-2">Trabajamos de la mano de aliados y entidades territoriales para acompañar proyectos de desarrollo social y empoderar las comunidades a las que llegamos.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="info-block">
-                <div class="info-image">
-                    <img src="Imagenes/skills.svg" alt="Generation Developers">
-                </div>
-                <div class="info-text">
-                    <h3>Generation Developers</h3>
-                    <p>
-                        Contamos con un equipo con enfoque proactivo, creativo y colaborativo que agrega valor a tu organización a través de la innovación digital con soluciones a medida.
-                        <span class="text-info-2">Trabajamos para satisfacer las necesidades de su empresa</> brindando servicios integrales de consultoría y entregando soluciones a través de aplicaciones web y móviles, gestión de redes sociales, creación de bases de datos, desarrollo de aplicaciones complejas y soluciones de computación en la nube.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="info-block">
-                <div class="info-image">
-                    <img src="Imagenes/Screenshot 2024-11-13 215809.jpg" alt="Generation Developers">
-                </div>
-                <div class="info-text">
-                    <h3>Aprovechamiento Tecnológico (by Marvaltech)</h3>
-                    <p>
-                        Contamos con un equipo especializado en los equipos electrónicos para ofrecer los mejores servicios de aprovechamiento. <span class="text-info-2">Trabajamos en la compra, venta, soporte, mantenimiento, recuperación y reuso de equipos electrónicos.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="info-block">
-                <div class="info-image">
-                    <img src="Imagenes/Screenshot 2024-11-13 215809.jpg" alt="Generation Developers">
-                </div>
-                <div class="info-text">
-                    <h3>Otros servicios</h3>
-                    <p>
-                        Ofrecemos <span class="text-info-2">diferentes servicios de formación asesoría y consultoría </span> para empresas, pymes, ONG, instituciones educativas tanto oficiales como privadas, Entidades territoriales certificadas. Además, entregamos <span class="text-info-2">soluciones a medida a través de robótica y domótica Acompañamos, además, en la formulación de proyectos.</span>                   </p>
-                </div>
-            </div>
-        </section>
+        <!-- Servicio 2 -->
+        <div class="service">
+            <img src="Imagenes/desarrollo2.png" alt="Servicio 2" class="service-img">
+            <h3>Soluciones Multiplataformas</h3>
+            <p>Son aplicaciones o software que están diseñados para funcionar en varios sistemas
+                operativos o dispositivos diferentes sin necesidad de modificaciones significativas.</p>
+            <button class="btn-modal" onclick="openModal('modal2')">Ver más</button>
+        </div>
 
-        <!-- SOCIOS Y ALIADOS -->
-        <section class="socios-aliados">
-            <h2>Socios, aliados y clientes</h2>
-            <div class="logos-container">
-                <div class="logo-item">
-                    <img src="Imagenes/manosvisibles.png" alt="Manos Visibles">
-                </div>
-                <div class="logo-item">
-                    <img src="Imagenes/Want.svg" alt="Want N' Get">
-                </div>
-                <div class="logo-item">
-                    <img src="Imagenes/GammaLogo.png" alt="Gamma">
-                </div>
+        <!-- Servicio 3 -->
+        <div class="service">
+            <img src="Imagenes/desarrollo2.png" alt="Servicio 2" class="service-img">
+            <h3>Gestión de
+                Proyectos
+                Software</h3>
+            <p>Es la gestión de recursos y tareas para desarrollar software de alta calidad. En Koulutus aplicamos prácticas y metodologías que garantizan proyectos efectivos y eficientes.</p>
+            <button class="btn-modal" onclick="openModal('modal2')">Ver más</button>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Modales -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Soluciones a Medida</h2>
+        </div>
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">✔</span> Adaptación Precisa</h3>
+                <p>Se diseñan para cumplir exactamente con los requisitos y procesos de la empresa.</p>
             </div>
-        </section>
+            <div class="feature">
+                <h3><span class="icon">📈</span> Escalabilidad</h3>
+                <p>Pueden evolucionar junto con el crecimiento de la empresa, agregando nuevas funcionalidades o adaptándose a nuevas necesidades.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🔗</span> Integración</h3>
+                <p>Pueden integrarse completamente con otros sistemas existentes en la organización, permitiendo una mejor coherencia y flujo de datos.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">⚙️</span> Control Completo</h3>
+                <p>La empresa tiene total control sobre el software, incluyendo actualizaciones, cambios y mejoras, lo que permite mayor flexibilidad.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🏆</span> Ventaja Competitiva</h3>
+                <p>Ofrece una solución única que puede diferenciar a la empresa en el mercado.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Soluciones Multiplataforma</h2>
+        </div>
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">✔</span> Ampliación Del Alcance</h3>
+                <p>Permiten que la aplicación llegue a un público
+                    más amplio al ser compatible con diversos
+                    dispositivos y sistemas operativos.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📈</span> Consistencia De La Experiencia Del Usuario</h3>
+                <p>Experiencia coherente en diferentes dispositivos.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🔗</span> Ahorro De Tiempo Y Costos</h3>
+                <p>Desarrollar una única base de código para todas las
+                    plataformas puede ser más eficiente y menos costoso
+                    que desarrollar y mantener versiones separadas para
+                    cada plataforma.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">⚙️</span> Mantenimiento Simplificado</h3>
+                <p>Actualizar una sola versión de la aplicación en lugar de
+                    múltiples versiones específicas para cada plataforma
+                    facilita el mantenimiento y reduce errores.</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
 
         <footer class="footer-section">
             <div class="footer-line"></div>
@@ -213,8 +219,6 @@
                 navbarNav.classList.toggle('open');
             });
             document.addEventListener('DOMContentLoaded', () => {
-                const image = document.querySelector('.modelo-diagrama img');
-                const infoBlocks = document.querySelectorAll('.info-block');
                 const scrollToTopButton = document.getElementById('scrollToTopButton');
         
                 const handleScroll = () => {
@@ -226,26 +230,6 @@
                     } else {
                         scrollToTopButton.classList.remove('visible');
                     }
-        
-                    // Efecto para la imagen dentro del modelo-diagrama
-                    if (image) {
-                        const imagePosition = image.getBoundingClientRect().top;
-                        if (imagePosition < screenPosition) {
-                            image.classList.add('appear');
-                        } else {
-                            image.classList.remove('appear');
-                        }
-                    }
-        
-                    // Efecto para los info-blocks
-                    infoBlocks.forEach((block) => {
-                        const blockPosition = block.getBoundingClientRect().top;
-                        if (blockPosition < screenPosition && blockPosition > 0) {
-                            block.classList.add('appear');
-                        } else {
-                            block.classList.remove('appear');
-                        }
-                    });
                 };
         
                 // Función para volver al inicio
@@ -263,6 +247,34 @@
                 window.addEventListener('scroll', handleScroll);
                 handleScroll();
             });
+
+            function openModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "block";
+                     document.body.style.overflow = "hidden"; // Deshabilitar scroll
+                }
+            }
+            
+            function closeModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = ""; // Deshabilitar scroll
+                }
+            }
+            
+            // Cerrar modal al hacer clic fuera de él
+            window.onclick = function (event) {
+                const modals = document.querySelectorAll(".modal");
+                modals.forEach((modal) => {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                        document.body.style.overflow = ""; // Deshabilitar scroll
+                        
+                    }
+                });
+            };
         </script>                
     </div>
 </body>
