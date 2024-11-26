@@ -101,7 +101,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
     z-index: 1000;
     border-radius: 5px;
-    width: 209px;
+    width: 240px;
     
 }
 
@@ -227,7 +227,7 @@ h2{
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
     width: 11%;  
-    margin-bottom: 20px;  
+    margin-bottom: 5px;  
     
 }
 /*Efectos tarjetas de valores*/
@@ -261,7 +261,7 @@ h2{
 
 /* Efecto de "salto" al pasar el cursor */
 .value-card:hover {
-    transform: translateY(-10px); 
+    transform: translateY(-5px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
@@ -289,6 +289,7 @@ h2{
     font-family: 'Roboto', sans-serif;  
     width: 1250px;
     text-align: center;
+    margin-top: 1px;
 }
 
 .area-equipo{
@@ -448,6 +449,9 @@ h2{
   /* Deshabilitar scroll del cuerpo */
   .no-scroll {
     overflow: hidden;
+  }
+  .social-icons{
+    width: 30px;
   }
 /*@medias para responsive*/
 @media (max-width: 768px) {
