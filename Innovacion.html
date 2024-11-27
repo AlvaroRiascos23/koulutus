@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koulutus/Desarrollo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="innovacion.css">
+    <link rel="icon" href="/Imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="inicio-page">
+        <!-- Incluye la Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Imagenes/logo-light.svg" alt="Logo" class="logo-img">
+                </a>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="Innovacion.html">Portafolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo de software</a></li>
+                            <li><a class="dropdown-item" href="Robotica.html">Robotica y domotica</a></li>
+                            <li><a class="dropdown-item" href="Innovacion.html">Innovación Tecnológica</a></li>
+                            <li><a class="dropdown-item" href="Datos.html">Almacenamiento de datos</a></li>
+                            <li><a class="dropdown-item" href="Alquiler.html">Alquiler de equipos</a></li>
+                            <!-- <li><a class="dropdown-item" href="Soporte.html">Soporte técnico</a></li>
+                            <li><a class="dropdown-item" href="GenerationDevelopers.html">Generación Developers</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DesarrolloSocial.html">Desarrollo Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">Sobre Nosotros</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="AboutUs.html">Esto somos nosotros</a></li>
+                            <li><a class="dropdown-item" href="AboutUs.html#nuestro-equipo">Nuestro equipo</a></li>
+                            <li><a class="dropdown-item" href="Elegirnos.html">¿Por qué elegirnos?</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+                <!-- Botón Contactanos -->
+                <a href="ContactUs.html" class="btn-contact-us">Contáctanos</a>
+            </div>
+        </nav>
+
+        <!-- Header con imagen -->
+        <header class="header-image">
+            
+        </header>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+<section id="servicios" class="services">
+    <div class="services-container">
+        <!-- Servicio 1 -->
+        <div class="service">
+            <img src="Imagenes/innovacion1.png" alt="Servicio 1" class="service-img">
+            <h3>Mantenimiento y
+                Soporte Continuo</h3>
+            <p>Estamos aquí para ayudarte en cada paso del
+                camino. Ofrecemos soporte continuo y mantenimiento para
+                que tu sitio web siga funcionando sin problemas.</p>
+            <button class="btn-modal" onclick="openModal('modal1')">Ver más</button>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="service">
+            <img src="Imagenes/innovacion2.png" alt="Servicio 2" class="service-img">
+            <h3>
+                Manejo de
+                Redes Sociales </h3>
+            <p>Gestión estratégica de redes sociales para fortalecer tu marca, crear contenido atractivo y conectar con tu audiencia.</p>
+            <button class="btn-modal" onclick="openModal('modal2')">Ver más</button>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="service">
+            <img src="Imagenes/innovacion3.png" alt="Servicio 3" class="service-img">
+            <h3>Programación de Publicaciones</h3>
+            <p>Organizamos y programamos tus publicaciones en redes sociales para garantizar una presencia constante y alineada con tus objetivos, maximizando el impacto en tu audiencia.</p>
+            <button class="btn-modal" onclick="openModal('modal3')">Ver más</button>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Modales -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Mantenimiento y Soporte Continuo</h2>
+        </div>
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">🛒</span> Integración De E-commerce</h3>
+                <p>¿Quieres vender en línea? Creamos tiendas virtuales fáciles de usar y seguras que impulsan las ventas y mejoran la experiencia del usuario.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🖌️</span> Estrategias De Contenidos Atractivos</h3>
+                <p>El contenido es rey. Creamos y gestionamos contenido que no solo atrae a tus visitantes, sino que también los convierte en clientes leales.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📱</span> Optimización Para Móviles</h3>
+                <p>Hoy en día, la mayoría de las personas navega desde sus teléfonos. Garantizamos que tu sitio se vea perfecto y funcione impecablemente en todos los dispositivos.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🔍</span> SEO Integrado</h3>
+                <p>Tu página no solo será visualmente atractiva, sino también optimizada para los motores de búsqueda, ayudándote a destacar en los resultados de Google.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🎨</span> Diseño Web Personalizado</h3>
+                <p>Cada negocio es único. Creamos diseños a medida que reflejan tu identidad y cautivan a tus visitantes desde el primer vistazo.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">⚙️</span> Desarrollo De Funcionalidades A Medida</h3>
+                <p>Desde formularios complejos hasta sistemas de reservas, desarrollamos soluciones personalizadas para satisfacer tus necesidades específicas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Manejo de
+                Redes Sociales</h2>
+        </div>
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">🌟</span> Transforma Tu Presencia En Redes Sociales</h3>
+                <p>En la era digital actual, una presencia fuerte y efectiva en redes sociales es esencial para el éxito de cualquier negocio. En Koulutus, ofrecemos servicios integrales de manejo de redes sociales diseñados para ayudarte a conectar con tu audiencia, construir tu marca y alcanzar tus objetivos comerciales.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📊</span> Estrategia De Redes Sociales</h3>
+                <p>Desarrollamos una estrategia personalizada basada en tus objetivos, audiencia y análisis de la competencia. Creamos un plan de acción que alinea tus metas comerciales con tácticas efectivas en redes sociales.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">✍️</span> Creación Y Gestión De Contenido</h3>
+                <p>Desde publicaciones cautivadoras hasta gráficos impactantes y videos atractivos, nuestro equipo se encarga de todo el contenido necesario para mantener tu perfil activo y atractivo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Programación de Publicaciones</h2>
+        </div>
+        
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">💬</span> Gestión De La Comunidad</h3>
+                <p>Interactuamos con tu audiencia, respondemos a comentarios y mensajes, y fomentamos una comunidad activa y comprometida con tu marca.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📈</span> Publicidad En Redes Sociales</h3>
+                <p>Creamos y gestionamos campañas publicitarias efectivas para aumentar tu alcance y generar leads cualificados. Optimizamos tus anuncios para asegurar el mejor retorno de inversión.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📊</span> Análisis Y Reportes</h3>
+                <p>Proporcionamos informes detallados sobre el rendimiento de tus redes sociales, incluyendo métricas clave y recomendaciones para mejorar continuamente tu estrategia.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer class="footer-section">
+            <div class="footer-line"></div>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h4>Corp. Koulutus</h4>
+                    <p>Desarrollo Social</p>
+                    <p>Cel: +57 314 864 16 88</p>
+                    <a href="mailto:direccionproyectos@koulutus.com.co">direccionproyectos@koulutus.com.co</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/koulutus_corp?igsh=N2Y3Y3Zza3RwMnhq" target="_blank">
+                            <img src="Imagenes/instagram-167-svgrepo-com.png" alt="Instagram">
+                        </a>
+                        <a href="https://github.com/koulutusDv" target="_blank">
+                            <img src="Imagenes/github-svgrepo-com.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.facebook.com/KoulutusCorp?mibextid=ZbWKwL" target="_blank">
+                            <img src="Imagenes/facebook-fill-svgrepo-com.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.linkedin.com/in/andres-felipe-valencia-ferro-12b0063a/?originalSubdomain=co" target="_blank">
+                            <img src="Imagenes/linkedin-svgrepo-com.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Todos los derechos reservados. <span>Koulutus.</span></p>
+            </div>
+        </footer>               
+
+        <!-- Incluye los iconos de redes sociales -->
+        <div class="social-icons">
+            <div class="scroll-to-top" id="scrollToTopButton">
+                <i class="fa fa-caret-up fa-2x" style="color: white;"></i>
+            </div>
+        
+            <div class="social-icon">
+                <a href="https://whatsapp.com/channel/0029Va1rLdV3WHTffCrwCR07" target="_blank">
+                    <img src="Imagenes/whatsapp-svgrepo-com.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/KoulutusCorp?mibextid=ZbWKwL" target="_blank">
+                    <img src="Imagenes/facebook-1-svgrepo-com.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/koulutus_corp?igsh=N2Y3Y3Zza3RwMnhq" target="_blank">
+                    <img src="Imagenes/instagram-1-svgrepo-com.png" alt="Instagram">
+                </a>
+            </div>
+        </div>             
+        
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                const navbarNav = document.getElementById('navbar-nav');
+                navbarNav.classList.toggle('open');
+            });
+            document.addEventListener('DOMContentLoaded', () => {
+                const scrollToTopButton = document.getElementById('scrollToTopButton');
+        
+                const handleScroll = () => {
+                    const screenPosition = window.innerHeight / 1.3;
+        
+                    // Mostrar u ocultar el botón de "Ir hacia arriba"
+                    if (window.scrollY > 350) {
+                        scrollToTopButton.classList.add('visible');
+                    } else {
+                        scrollToTopButton.classList.remove('visible');
+                    }
+                };
+        
+                // Función para volver al inicio
+                const scrollToTop = () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth', 
+                    });
+                };
+
+
+        
+                // Agregar el evento click al botón de "Ir hacia arriba"
+                scrollToTopButton.addEventListener('click', scrollToTop);
+                window.addEventListener('scroll', handleScroll);
+                handleScroll();
+            });
+            
+            function openModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "block";
+                     document.body.style.overflow = "hidden"; // Deshabilitar scroll
+                }
+            }
+            
+            function closeModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = ""; // Deshabilitar scroll
+                }
+            }
+            
+            // Cerrar modal al hacer clic fuera de él
+            window.onclick = function (event) {
+                const modals = document.querySelectorAll(".modal");
+                modals.forEach((modal) => {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                        document.body.style.overflow = ""; // Deshabilitar scroll
+                        
+                    }
+                });
+            };
+        </script>                
+    </div>
+</body>
+</html>

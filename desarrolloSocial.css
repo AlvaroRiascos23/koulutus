@@ -1,0 +1,129 @@
+body{
+    background: linear-gradient(to right, #251c3e 5%, #846ec1 95%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-section-desarrolloSocial {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('Imagenes/tecnologia-en-la-educacion.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.header-overlay-desarrolloSocial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content-desarrolloSocial {
+    position: relative;
+    z-index: 2;
+}
+
+.header-paragraph {
+    font-size: 1.5rem;
+    line-height: 2;
+    max-width: 1300px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #f0c014;
+}
+
+/*BLOQUE CONTENIDO DESARROLLO SOCIAL*/
+.desarrolloSocial-section {
+    padding: 40px;
+    color: white;
+    align-items: flex-start;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.section-title-desarrolloSocial {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-description-desarrolloSocial {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.section-description-desarrolloSocial strong {
+    font-weight: bold;
+}
+
+.section-description-desarrolloSocial .highlight {
+    color: #f0c014;
+    font-weight: bold;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.project-card {
+    background: #1D3557;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+    width: 450px;
+    height: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1); 
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+

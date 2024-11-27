@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koulutus/Desarrollo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="alquiler.css">
+    <link rel="icon" href="/Imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="inicio-page">
+        <!-- Incluye la Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Imagenes/logo-light.svg" alt="Logo" class="logo-img">
+                </a>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="Alquiler.html">Portafolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo de software</a></li>
+                            <li><a class="dropdown-item" href="Robotica.html">Robotica y domotica</a></li>
+                            <li><a class="dropdown-item" href="Innovacion.html">Innovación Tecnológica</a></li>
+                            <li><a class="dropdown-item" href="Datos.html">Almacenamiento de datos</a></li>
+                            <li><a class="dropdown-item" href="Alquiler.html">Alquiler de equipos</a></li>
+                            <!-- <li><a class="dropdown-item" href="Soporte.html">Soporte técnico</a></li>
+                            <li><a class="dropdown-item" href="GenerationDevelopers.html">Generación Developers</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DesarrolloSocial.html">Desarrollo Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">Sobre Nosotros</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="AboutUs.html">Esto somos nosotros</a></li>
+                            <li><a class="dropdown-item" href="AboutUs.html#nuestro-equipo">Nuestro equipo</a></li>
+                            <li><a class="dropdown-item" href="Elegirnos.html">¿Por qué elegirnos?</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+                <!-- Botón Contactanos -->
+                <a href="ContactUs.html" class="btn-contact-us">Contáctanos</a>
+            </div>
+        </nav>
+
+        <!-- Header con imagen -->
+        <header class="header-image">
+            
+        </header>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+<section id="servicios" class="services">
+    <div class="services-container">
+        <!-- Servicio 1 -->
+        <div class="service">
+            <img src="Imagenes/alquiler1.png" alt="Servicio 1" class="service-img">
+            <h3>Alquiler de impresora 3D y VideoBeam</h3>
+            <p>Ofrecemos impresoras 3D
+                de última generación para tus proyectos de
+                prototipado y producción. Ideales para
+                ingenieros, diseñadores y fabricantes.</p>
+            <button class="btn-modal" onclick="openModal('modal1')">Ver más</button>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="service">
+            <img src="Imagenes/alquiler2.png" alt="Servicio 2" class="service-img">
+            <h3>
+               Alquiler de Equipos de Cómputo </h3>
+            <p>Disponemos de equipos de
+                cómputo modernos y de alto rendimiento
+                para tus necesidades empresariales y
+                personales.</p>
+            <button class="btn-modal" onclick="openModal('modal2')">Ver más</button>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="service">
+            <img src="Imagenes/alquiler3.png" alt="Servicio 3" class="service-img">
+            <h3>Alquiler de Espacio - Coworking</h3>
+            <p>Nuestros espacios de coworking
+                estan diseñados para ofrecer un ambiente
+                productivo y colaborativo, perfecto para freelancers,
+                startups y pequeñas empresas.</p>
+            <button class="btn-modal" onclick="openModal('modal3')">Ver más</button>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Modales -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">ALQUILER DE IMPRESORA 3D</h2>
+        </div>
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">🖋️</span> Modelado Y Diseño</h3>
+                <p>Imprime modelos 3D de alta precisión para diseño
+                    y arquitectura.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🎓</span> Educación</h3>
+                <p>Utiliza la impresora 3D en proyectos educativos y
+                    de investigación.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">⚙️</span> Fabricación De Piezas Personalizadas</h3>
+                <p>Produce piezas únicas para proyectos específicos.</p>
+            </div>
+            <div class="modal-header">
+                <h2 class="modal-title">ALQUILER DE VIDEOBEAM</h2>
+                <P>Alquiler de videobeams de
+                    alta calidad para presentaciones, conferencias
+                    y eventos. Nuestros videobeams ofrecen una
+                    excelente resolución y brillo.</P>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📊</span> Presentaciones Empresariales</h3>
+                <p>Mejora la calidad visual de tus presentaciones y reuniones.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🎤</span> Conferencias Y Seminarios</h3>
+                <p>Ideal para eventos donde necesitas proyectar
+                    información a una audiencia.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🎉</span> Eventos Sociales</h3>
+                <p>Perfecto para bodas, fiestas y eventos comunitarios
+                    donde se requiere proyección visual.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Alquiler de Equipos de Cómputo</h2>
+        </div>
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">💻</span> Trabajo Remoto</h3>
+                <p>Equipos ideales para trabajadores remotos y freelancers.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🖥️</span> Eventos Y Capacitaciones</h3>
+                <p>Perfectos para capacitaciones y eventos donde se requiere equipo de cómputo adicional.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📈</span> Proyectos Temporales</h3>
+                <p>Solución ideal para proyectos a corto plazo que requieren computadoras de alto rendimiento.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📚</span> Estudiantes</h3>
+                <p>Alquiler de laptops para estudiantes que necesitan equipos para estudios y proyectos académicos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Alquiler de Espacio - Coworking</h2>
+        </div>
+        
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">🧑‍💻</span> Freelancers Y Trabajadores Remotos</h3>
+                <p>Espacio de trabajo profesional y sin distracciones.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🤝</span> Startups Y Pequeñas Empresas</h3>
+                <p>Entorno ideal para la colaboración y el crecimiento de equipos pequeños.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🌐</span> Redes Y Eventos</h3>
+                <p>Oportunidades para conectar con otros profesionales
+                    y asistir a eventos de networking.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📋</span> Reuniones Y Presentaciones</h3>
+                <p>Salas de reuniones equipadas para presentaciones y reuniones con clientes o equipos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer class="footer-section">
+            <div class="footer-line"></div>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h4>Corp. Koulutus</h4>
+                    <p>Desarrollo Social</p>
+                    <p>Cel: +57 314 864 16 88</p>
+                    <a href="mailto:direccionproyectos@koulutus.com.co">direccionproyectos@koulutus.com.co</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/koulutus_corp?igsh=N2Y3Y3Zza3RwMnhq" target="_blank">
+                            <img src="Imagenes/instagram-167-svgrepo-com.png" alt="Instagram">
+                        </a>
+                        <a href="https://github.com/koulutusDv" target="_blank">
+                            <img src="Imagenes/github-svgrepo-com.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.facebook.com/KoulutusCorp?mibextid=ZbWKwL" target="_blank">
+                            <img src="Imagenes/facebook-fill-svgrepo-com.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.linkedin.com/in/andres-felipe-valencia-ferro-12b0063a/?originalSubdomain=co" target="_blank">
+                            <img src="Imagenes/linkedin-svgrepo-com.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Todos los derechos reservados. <span>Koulutus.</span></p>
+            </div>
+        </footer>               
+
+        <!-- Incluye los iconos de redes sociales -->
+        <div class="social-icons">
+            <div class="scroll-to-top" id="scrollToTopButton">
+                <i class="fa fa-caret-up fa-2x" style="color: white;"></i>
+            </div>
+        
+            <div class="social-icon">
+                <a href="https://whatsapp.com/channel/0029Va1rLdV3WHTffCrwCR07" target="_blank">
+                    <img src="Imagenes/whatsapp-svgrepo-com.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/KoulutusCorp?mibextid=ZbWKwL" target="_blank">
+                    <img src="Imagenes/facebook-1-svgrepo-com.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/koulutus_corp?igsh=N2Y3Y3Zza3RwMnhq" target="_blank">
+                    <img src="Imagenes/instagram-1-svgrepo-com.png" alt="Instagram">
+                </a>
+            </div>
+        </div>             
+        
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                const navbarNav = document.getElementById('navbar-nav');
+                navbarNav.classList.toggle('open');
+            });
+            document.addEventListener('DOMContentLoaded', () => {
+                const scrollToTopButton = document.getElementById('scrollToTopButton');
+        
+                const handleScroll = () => {
+                    const screenPosition = window.innerHeight / 1.3;
+        
+                    // Mostrar u ocultar el botón de "Ir hacia arriba"
+                    if (window.scrollY > 350) {
+                        scrollToTopButton.classList.add('visible');
+                    } else {
+                        scrollToTopButton.classList.remove('visible');
+                    }
+                };
+        
+                // Función para volver al inicio
+                const scrollToTop = () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth', 
+                    });
+                };
+
+
+        
+                // Agregar el evento click al botón de "Ir hacia arriba"
+                scrollToTopButton.addEventListener('click', scrollToTop);
+                window.addEventListener('scroll', handleScroll);
+                handleScroll();
+            });
+            
+            function openModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "block";
+                     document.body.style.overflow = "hidden"; // Deshabilitar scroll
+                }
+            }
+            
+            function closeModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = ""; // Deshabilitar scroll
+                }
+            }
+            
+            // Cerrar modal al hacer clic fuera de él
+            window.onclick = function (event) {
+                const modals = document.querySelectorAll(".modal");
+                modals.forEach((modal) => {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                        document.body.style.overflow = ""; // Deshabilitar scroll
+                        
+                    }
+                });
+            };
+        </script>                
+    </div>
+</body>
+</html>
