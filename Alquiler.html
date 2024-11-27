@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koulutus/Desarrollo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="robotica.css">
+    <link rel="stylesheet" href="alquiler.css">
     <link rel="icon" href="/Imagenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -22,15 +22,15 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="Robotica.html">Portafolio</a>
+                        <a class="nav-link" href="Alquiler.html">Portafolio</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo de software</a></li>
                             <li><a class="dropdown-item" href="Robotica.html">Robotica y domotica</a></li>
                             <li><a class="dropdown-item" href="Innovacion.html">Innovación Tecnológica</a></li>
                             <li><a class="dropdown-item" href="Datos.html">Almacenamiento de datos</a></li>
                             <li><a class="dropdown-item" href="Alquiler.html">Alquiler de equipos</a></li>
-                            <li><a class="dropdown-item" href="Soporte.html">Soporte técnico</a></li>
-                            <li><a class="dropdown-item" href="GenerationDevelopers.html">Generación Developers</a></li>
+                            <!-- <li><a class="dropdown-item" href="Soporte.html">Soporte técnico</a></li>
+                            <li><a class="dropdown-item" href="GenerationDevelopers.html">Generación Developers</a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -41,7 +41,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="AboutUs.html">Esto somos nosotros</a></li>
                             <li><a class="dropdown-item" href="AboutUs.html#nuestro-equipo">Nuestro equipo</a></li>
-                            <li><a class="dropdown-item" href="GenerationDevelopers.html">¿Por qué elegirnos?</a></li>
+                            <li><a class="dropdown-item" href="Elegirnos.html">¿Por qué elegirnos?</a></li>
                         </ul>
                     </li>
                     
@@ -52,186 +52,153 @@
             </div>
         </nav>
 
-       
-         <!-- Header con imagen -->
-         <header class="header-image">
+        <!-- Header con imagen -->
+        <header class="header-image">
             
-         </header>
- 
-     <!-- SECCIÓN DE SERVICIOS -->
- <section id="servicios" class="services">
-     <div class="services-container">
-         <!-- Servicio 1 -->
-         <div class="service">
-             <img src="Imagenes/robotica1.png" alt="Servicio 1" class="service-img">
-             <h3>Materiales de Construcción</h3>
-             <p>Proveemos materiales especializados para proyectos de robótica y domótica, asegurando durabilidad, adaptabilidad y óptima integración con sistemas automatizados.</p>
-             <button class="btn-modal" onclick="openModal('modal1')">Ver más</button>
-         </div>
- 
-         <!-- Servicio 2 -->
-         <div class="service">
-             <img src="Imagenes/robotica2.png" alt="Servicio 2" class="service-img">
-             <h3>Asesoría en
-                Proyectos de
-                Domotización Educativo/Empresarial </h3>
-             <p>Ofrecemos asesoría en domotización para entornos educativos y empresariales, mejorando seguridad, eficiencia y productividad con tecnología inteligente.</p>
-             <button class="btn-modal" onclick="openModal('modal2')">Ver más</button>
-         </div>
- 
-         <!-- Servicio 3 -->
-         <div class="service">
-             <img src="Imagenes/robotica3.png" alt="Servicio 3" class="service-img">
-             <h3>Asesoría en
-                Proyectos de
-                Domotización Personales</h3>
-             <p>Brindamos asesoría en proyectos de domotización personal, diseñando soluciones inteligentes que mejoran la comodidad, seguridad y eficiencia energética en hogares, adaptadas a las necesidades de cada cliente.</p>
-             <button class="btn-modal" onclick="openModal('modal3')">Ver más</button>
-         </div>
-         
-     </div>
- </section>
- 
- <!-- Modales -->
- <div id="modal1" class="modal">
-     <div class="modal-content">
-         <span class="close" onclick="closeModal('modal1')">&times;</span>
-         <div class="modal-header">
-             <h2 class="modal-title">Materiales de Construcción</h2>
-         </div>
-         <div class="modal-body">
+        </header>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+<section id="servicios" class="services">
+    <div class="services-container">
+        <!-- Servicio 1 -->
+        <div class="service">
+            <img src="Imagenes/alquiler1.png" alt="Servicio 1" class="service-img">
+            <h3>Alquiler de impresora 3D y VideoBeam</h3>
+            <p>Ofrecemos impresoras 3D
+                de última generación para tus proyectos de
+                prototipado y producción. Ideales para
+                ingenieros, diseñadores y fabricantes.</p>
+            <button class="btn-modal" onclick="openModal('modal1')">Ver más</button>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="service">
+            <img src="Imagenes/alquiler2.png" alt="Servicio 2" class="service-img">
+            <h3>
+               Alquiler de Equipos de Cómputo </h3>
+            <p>Disponemos de equipos de
+                cómputo modernos y de alto rendimiento
+                para tus necesidades empresariales y
+                personales.</p>
+            <button class="btn-modal" onclick="openModal('modal2')">Ver más</button>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="service">
+            <img src="Imagenes/alquiler3.png" alt="Servicio 3" class="service-img">
+            <h3>Alquiler de Espacio - Coworking</h3>
+            <p>Nuestros espacios de coworking
+                estan diseñados para ofrecer un ambiente
+                productivo y colaborativo, perfecto para freelancers,
+                startups y pequeñas empresas.</p>
+            <button class="btn-modal" onclick="openModal('modal3')">Ver más</button>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Modales -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">ALQUILER DE IMPRESORA 3D</h2>
+        </div>
+        <div class="modal-body">
             <div class="feature">
-                <h3><span class="icon">👁️</span> Sensores De Movimiento</h3>
-                <p>Sensores PIR, ultrasonidos y de infrarrojos para
-                    detección de presencia y movimiento.</p>
+                <h3><span class="icon">🖋️</span> Modelado Y Diseño</h3>
+                <p>Imprime modelos 3D de alta precisión para diseño
+                    y arquitectura.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🖥️</span> Controladores Y Microcontroladores</h3>
-                <p>Arduinos, Raspberry Pi, y ESP32 para proyectos
-                    de automatización.</p>
+                <h3><span class="icon">🎓</span> Educación</h3>
+                <p>Utiliza la impresora 3D en proyectos educativos y
+                    de investigación.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🔧</span> Actuadores</h3>
-                <p>Motores, servomotores, y actuadores lineales para
-                    control de movimientos en robots y sistemas
-                    automatizados.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">📡</span> Módulos De Comunicación</h3>
-                <p>Módulos Wi-Fi, Bluetooth y Zigbee para
-                    conectividad en sistemas domóticos.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">📷</span> Cámaras Y Sensores De Imagen</h3>
-                <p>Cámaras IP, cámaras 3D y módulos de visión
-                    por computadora.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">🔌</span> Placas Base Y Shields</h3>
-                <p>Placas de expansión y shields compatibles para
-                    facilitar la integración de componentes.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">🔋</span> Baterías Y Fuentes De Alimentación</h3>
-                <p>Baterías recargables y adaptadores de corriente
-                    para proyectos portátiles.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">🤖</span> Chasis Para Robots</h3>
-                <p>Estructuras prefabricadas y kits modulares para
-                    montar robots personalizados.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">🔗</span> Conectores Y Cables</h3>
-                <p>Cables Dupont, jumpers, y conectores de fácil
-                    manejo para proyectos electrónicos.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">🛠️</span> Materiales De Prototipado</h3>
-                <p>Impresoras 3D, filamentos, y kits de prototipado
-                    rápido para desarrollar ideas.</p>
-            </div>
-         </div>
-     </div>
- </div>
- 
- <div id="modal2" class="modal">
-     <div class="modal-content">
-         <span class="close" onclick="closeModal('modal2')">&times;</span>
-         <div class="modal-header">
-             <h2 class="modal-title">EDUCATIVOS</h2>
-         </div>
-         <div class="modal-body">
-            <div class="feature">
-                <h3><span class="icon">📘</span> Diseño De Proyectos Didácticos</h3>
-                <p>Creación de módulos y proyectos de domótica para colegios, universidades y centros de formación técnica.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">🎓</span> Capacitación En Domótica</h3>
-                <p>Cursos y talleres sobre principios de automatización del hogar y robótica para estudiantes y docentes.</p>
-            </div>
-            <div class="feature">
-                <h3><span class="icon">🏗️</span> Implementación De Laboratorios De Robótica</h3>
-                <p>Asesoramiento en la instalación de laboratorios equipados con la última tecnología en robótica y domótica.</p>
+                <h3><span class="icon">⚙️</span> Fabricación De Piezas Personalizadas</h3>
+                <p>Produce piezas únicas para proyectos específicos.</p>
             </div>
             <div class="modal-header">
-                <h2 class="modal-title">EMPRESARIAL</h2>
+                <h2 class="modal-title">ALQUILER DE VIDEOBEAM</h2>
+                <P>Alquiler de videobeams de
+                    alta calidad para presentaciones, conferencias
+                    y eventos. Nuestros videobeams ofrecen una
+                    excelente resolución y brillo.</P>
             </div>
             <div class="feature">
-                <h3><span class="icon">🤖</span> Consultoría De Automatización</h3>
-                <p>Evaluación de necesidades y desarrollo de soluciones de automatización para edificios inteligentes.</p>
+                <h3><span class="icon">📊</span> Presentaciones Empresariales</h3>
+                <p>Mejora la calidad visual de tus presentaciones y reuniones.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🔒</span> Sistemas De Seguridad Integrados</h3>
-                <p>Diseño e implementación de sistemas de seguridad y monitoreo para oficinas y fábricas.</p>
+                <h3><span class="icon">🎤</span> Conferencias Y Seminarios</h3>
+                <p>Ideal para eventos donde necesitas proyectar
+                    información a una audiencia.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">⚡</span> Optimización Energética</h3>
-                <p>Asesoría para la implementación de sistemas de control energético automatizados que maximicen la eficiencia y reduzcan costos operativos.</p>
+                <h3><span class="icon">🎉</span> Eventos Sociales</h3>
+                <p>Perfecto para bodas, fiestas y eventos comunitarios
+                    donde se requiere proyección visual.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Alquiler de Equipos de Cómputo</h2>
+        </div>
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">💻</span> Trabajo Remoto</h3>
+                <p>Equipos ideales para trabajadores remotos y freelancers.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">📡</span> Control Y Monitoreo Remoto</h3>
-                <p>Implementación de sistemas que permitan el control y monitoreo de instalaciones empresariales desde dispositivos móviles.</p>
-            </div>
-         </div>
-     </div>
- </div>
- 
- <div id="modal3" class="modal">
-     <div class="modal-content">
-         <span class="close" onclick="closeModal('modal3')">&times;</span>
-         <div class="modal-header">
-             <h2 class="modal-title">PERSONAL</h2>
-         </div>
-         
-         <div class="modal-body">
-            <div class="feature">
-                <h3><span class="icon">🏠</span> Automatización Del Hogar</h3>
-                <p>Asesoría personalizada para la instalación de sistemas
-                    de automatización en el hogar, incluyendo control de
-                    iluminación, climatización, y seguridad.
-                </p>
+                <h3><span class="icon">🖥️</span> Eventos Y Capacitaciones</h3>
+                <p>Perfectos para capacitaciones y eventos donde se requiere equipo de cómputo adicional.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">📱</span> Integración De Asistentes Virtuales</h3>
-                <p>Configuración y sincronización de asistentes virtuales
-                    (Alexa, Google Home) con dispositivos domóticos.</p>
+                <h3><span class="icon">📈</span> Proyectos Temporales</h3>
+                <p>Solución ideal para proyectos a corto plazo que requieren computadoras de alto rendimiento.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🛠️</span> Proyectos A Medida</h3>
-                <p>Desarrollo de soluciones domóticas personalizadas
-                    para mejorar la comodidad, seguridad y eficiencia en
-                    el hogar.</p>
+                <h3><span class="icon">📚</span> Estudiantes</h3>
+                <p>Alquiler de laptops para estudiantes que necesitan equipos para estudios y proyectos académicos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <div class="modal-header">
+            <h2 class="modal-title">Alquiler de Espacio - Coworking</h2>
+        </div>
+        
+        <div class="modal-body">
+            <div class="feature">
+                <h3><span class="icon">🧑‍💻</span> Freelancers Y Trabajadores Remotos</h3>
+                <p>Espacio de trabajo profesional y sin distracciones.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🔧</span> Entrenamiento Y Soporte</h3>
-                <p>Capacitaciones para el uso y mantenimiento de los
-                    sistemas domóticos instalados, asegurando un
-                    funcionamiento óptimo.</p>
+                <h3><span class="icon">🤝</span> Startups Y Pequeñas Empresas</h3>
+                <p>Entorno ideal para la colaboración y el crecimiento de equipos pequeños.</p>
             </div>
-         </div>
-     </div>
- </div>
+            <div class="feature">
+                <h3><span class="icon">🌐</span> Redes Y Eventos</h3>
+                <p>Oportunidades para conectar con otros profesionales
+                    y asistir a eventos de networking.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📋</span> Reuniones Y Presentaciones</h3>
+                <p>Salas de reuniones equipadas para presentaciones y reuniones con clientes o equipos.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
         <footer class="footer-section">
             <div class="footer-line"></div>
@@ -321,9 +288,8 @@
                 scrollToTopButton.addEventListener('click', scrollToTop);
                 window.addEventListener('scroll', handleScroll);
                 handleScroll();
-
             });
-
+            
             function openModal(modalId) {
                 const modal = document.getElementById(modalId);
                 if (modal) {

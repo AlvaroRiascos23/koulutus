@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
-    <link rel="stylesheet" href="/Index.css">
-    <link rel="stylesheet" href="/AboutUs.css">
+    <title>Koulutus/Desarrollo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="icon" href="/Imagenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="contact-us-page">
+    <div class="inicio-page">
+        <!-- Incluye la Navbar -->
         <nav class="navbar">
             <div class="navbar-container">
                 <a class="navbar-brand" href="index.html">
                     <img src="Imagenes/logo-light.svg" alt="Logo" class="logo-img">
                 </a>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Portafolio</a>
+                        <a class="nav-link" href="ContactUs.html">Portafolio</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="ServiciosSociales.html">Desarrollo Social</a></li>
-                            <li><a class="dropdown-item" href="GenerationDevelopers.html">Generación Developers</a></li>
-                            <li><a class="dropdown-item" href="OtrosServicios.html">Otros servicios</a></li>
+                            <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo de software</a></li>
+                            <li><a class="dropdown-item" href="Robotica.html">Robotica y domotica</a></li>
+                            <li><a class="dropdown-item" href="Innovacion.html">Innovación Tecnológica</a></li>
+                            <li><a class="dropdown-item" href="Datos.html">Almacenamiento de datos</a></li>
+                            <li><a class="dropdown-item" href="Alquiler">Alquiler de equipos</a></li>
+                            <!-- <li><a class="dropdown-item" href="Soporte.html">Soporte técnico</a></li>
+                            <li><a class="dropdown-item" href="GenerationDevelopers.html">Generación Developers</a></li> -->
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DesarrolloSocial.html">Desarrollo Social</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="AboutUs.html">Sobre Nosotros</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="ServiciosSociales.html">Esto somos nosotros</a></li>
-                            <li><a class="dropdown-item" href="GenerationDevelopers.html">Nuestro equipo</a></li>
+                            <li><a class="dropdown-item" href="AboutUs.html">Esto somos nosotros</a></li>
+                            <li><a class="dropdown-item" href="AboutUs.html#nuestro-equipo">Nuestro equipo</a></li>
+                            <li><a class="dropdown-item" href="Elegirnos.html">¿Por qué elegirnos?</a></li>
                         </ul>
                     </li>
+                    
                 </ul>
 
                 <!-- Botón Contactanos -->
@@ -40,274 +52,161 @@
             </div>
         </nav>
 
-        <!-- Bloque Header con Imagen de Fondo -->
-        <header class="about-us-header">
-            <img src="Imagenes/worker-protective-gloves-polishing-metal-with-sparks.jpg" alt="Header Image" class="header-image">
-            <div class="header-overlay">
-                <h1 class="header-title">CONTACTÁNOS</h1>
-            </div>
-        </header>
-
-        <!-- Bloque para el título Feel free to Contact us -->
-        <section class="contact-us-header">
-            <div class="container text-center">
-                <h2>Solicita una Cotización</h2>
+        <section id="contacto" class="contact-form-section">
+            <div class="form-container">
+                <h2>Contáctanos</h2>
+                <form id="contact-form" class="contact-form">
+                    <label for="name">Nombre*</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+    
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+    
+                    <label for="phone">Número de Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="### ### ### ###" pattern="[0-9]{3}[ ]?[0-9]{3}[ ]?[0-9]{4}" required>
+    
+                    <label for="message">Mensaje*</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+    
+                    <button type="submit" class="submit-btn">Enviar Formulario</button>
+                </form>
             </div>
         </section>
+    
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>Gracias por contactarnos</h2>
+                <p id="modal-message">Hemos recibido tu mensaje.</p>
+                <button id="close-modal-btn" class="btn-modal">Cerrar</button>
+            </div>
+        </div>
 
-        <!-- Bloque de contenido principal -->
-        <section class="contact-main-content">
-            <div class="container d-flex flex-wrap justify-content-between">
-                <!-- Sección de Customer Service and Questions -->
-                <div class="customer-service" style="flex: 1; min-width: 300px; max-width: 600px;">
-                    <h3>SERVICIOS,COTIZACIONES Y CONSULTAS</h3>
-                    <p><strong>Solicita una cotización personalizada.</strong> y descubre como podemos ofrecerte el mejor servicio adaptado a tus requerimientos.</p>
-                    <p><strong>Numero:</strong> <a href="tel:+573175157866">(+57) 317-515-7866</a></p>
-                    <p><strong>¡Contáctanos hoy mismo y empieza hacer realidad todos tus proyectos!</strong><br>
-                    <p><em>*Tiempo en zona horaria local de la zona</em></p>
-
-                    <!-- Iconos debajo de la información -->
-                    <div class="contact-us-social-icons d-flex gap-3 mt-3">
-                        <div class="contact-us-social-icon">
-                            <a href="https://wa.me/573175157866" target="_blank">
-                                <img src="imagenes/whatsapp20-svgrepo-com.png" alt="Whatsapp">
-                            </a>
-                        </div>
-                        <div class="contact-us-social-icon"> 
-                            <a href="https://www.instagram.com/ingemancsas/profilecard/?igsh=MWlucmx5Ymh4MmVpaA==" target="_blank">
-                                <img src="imagenes/instagram-167-svgrepo-com.png" alt="Instagram">
-                            </a>
-                        </div>
-                        <div class="contact-us-social-icon">
-                            <a href="https://www.facebook.com/profile.php?id=100051871489497&mibextid=ZbWKwL" target="_blank">
-                                <img src="imagenes/facebook-176-svgrepo-com.png" alt="Facebook">
-                            </a>
-                        </div>
+        <footer class="footer-section">
+            <div class="footer-line"></div>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h4>Corp. Koulutus</h4>
+                    <p>Desarrollo Social</p>
+                    <p>Cel: +57 314 864 16 88</p>
+                    <a href="mailto:direccionproyectos@koulutus.com.co">direccionproyectos@koulutus.com.co</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/koulutus_corp?igsh=N2Y3Y3Zza3RwMnhq" target="_blank">
+                            <img src="Imagenes/instagram-167-svgrepo-com.png" alt="Instagram">
+                        </a>
+                        <a href="https://github.com/koulutusDv" target="_blank">
+                            <img src="Imagenes/github-svgrepo-com.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.facebook.com/KoulutusCorp?mibextid=ZbWKwL" target="_blank">
+                            <img src="Imagenes/facebook-fill-svgrepo-com.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.linkedin.com/in/andres-felipe-valencia-ferro-12b0063a/?originalSubdomain=co" target="_blank">
+                            <img src="Imagenes/linkedin-svgrepo-com.png" alt="LinkedIn">
+                        </a>
                     </div>
                 </div>
-
-
-                <!-- Sección del formulario de contacto -->
-                <div class="contact-form">
-                    <h3>
-                        Formulario de contacto
-                        <img src="imagenes/contact-details-svgrepo-com.png" alt="Contact Icon" class="icono-titulo">
-                    </h3>
-                    <form action="#" method="POST">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nombre*</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email*</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter you email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Numero de telefono</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="### ### ### ###">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Mensaje*</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter the message to send" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Formulario</button>
-                    </form>
-                </div>
             </div>
-        </section>
+            <div class="footer-bottom">
+                <p>© 2024 Todos los derechos reservados. <span>Koulutus.</span></p>
+            </div>
+        </footer>               
 
         <!-- Incluye los iconos de redes sociales -->
         <div class="social-icons">
+            <div class="scroll-to-top" id="scrollToTopButton">
+                <i class="fa fa-caret-up fa-2x" style="color: white;"></i>
+            </div>
+        
             <div class="social-icon">
-                <a href="https://wa.me/573175157866" target="_blank">
-                    <img src="imagenes/whatsapp-svgrepo-com.png" alt="WhatsApp">
+                <a href="https://whatsapp.com/channel/0029Va1rLdV3WHTffCrwCR07" target="_blank">
+                    <img src="Imagenes/whatsapp-svgrepo-com.png" alt="WhatsApp">
                 </a>
             </div>
             <div class="social-icon">
-                <a href="https://www.facebook.com/profile.php?id=100051871489497&mibextid=ZbWKwL" target="_blank">
+                <a href="https://www.facebook.com/KoulutusCorp?mibextid=ZbWKwL" target="_blank">
                     <img src="Imagenes/facebook-1-svgrepo-com.png" alt="Facebook">
                 </a>
             </div>
             <div class="social-icon">
-                <a href="https://www.instagram.com/ingemancsas/profilecard/?igsh=MWlucmx5Ymh4MmVpaA==" target="_blank">
-                    <img src="imagenes/instagram-1-svgrepo-com.png" alt="Instagram">
+                <a href="https://www.instagram.com/koulutus_corp?igsh=N2Y3Y3Zza3RwMnhq" target="_blank">
+                    <img src="Imagenes/instagram-1-svgrepo-com.png" alt="Instagram">
                 </a>
             </div>
-        </div>
-
-    <!--FOOTER-->
-    <footer class="footer-section">
-        <div class="footer-content container">
-            <div class="footer-item">
-                <img src="Imagenes/icono.png" alt="Logo Empresa" class="footer-logo">
-                <p>Dirección</p>
-                <p>(+57) 317-515-7866</p>
-                <p>comercial@ingemanc.com</p>
-            </div>
-            <div class="footer-item">
-                <h3>Navega</h3>
-                <ul>
-                    <li><a href="AboutUs.html">Sobre nosotros</a></li>
-                    <li><a href="#sectors-section">Sectores</a></li>
-                    <li><a href="ServiesOffered.html">Servicios</a></li>
-                    <li><a href="ContactUs.html">Contáctanos</a></li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <h3>Síguenos</h3>
-                <p>¡Síguenos en nuestras redes sociales y únete a nuestra comunidad!</p>
-                <div class="social-icons-footer">
-                    <a href="https://www.facebook.com/profile.php?id=100051871489497&mibextid=ZbWKwL" target="_blank" class="icon-circle">
-                        <img src="Imagenes/facebook-1-svgrepo-com.png" alt="Facebook">
-                    </a>
-                    <a href="https://twitter.com" target="_blank" class="icon-circle">
-                        <img src="Imagenes/x-social-media-round-icon.png" alt="Twitter">
-                    </a>
-                    <a href="https://www.instagram.com/ingemancsas/profilecard/?igsh=MWlucmx5Ymh4MmVpaA==" target="_blank" class="icon-circle">
-                        <img src="Imagenes/instagram-1-svgrepo-com.png" alt="Instagram">
-                    </a>
-                    <a href="https://wa.me/573175157866" target="_blank" class="icon-circle">
-                        <img src="Imagenes/whatsapp-svgrepo-com.png" alt="Whatsapp">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Botón de flecha hacia arriba 
-        <div class="scroll-to-top">
-            <button onclick="scrollToTop()">
-                <img src="imagenes/arrow-narrow-up-move-svgrepo-com.png" alt="Scroll to top" class="arrow-icon">
-            </button>
-        </div>
-    </footer>-->
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-    
-            const aboutUsNavbar = document.querySelector('.about-us-navbar');
-    
-            const topBarHeight = document.querySelector('.top-bar').offsetHeight;
-            aboutUsNavbar.style.top = `${topBarHeight}px`;  
-            
-            function handleScroll() {
-                if (window.scrollY > 50) { 
-                    aboutUsNavbar.classList.add('scrolled');
-                } else { 
-                    aboutUsNavbar.classList.remove('scrolled');
-                }
-            }
-    
-            window.addEventListener('scroll', handleScroll);
-    
-            aboutUsNavbar.style.transition = 'background-color 0.3s ease';
-    
-            document.addEventListener('mousemove', (e) => {
-                if (e.clientY < 50) {
-                    aboutUsNavbar.style.top = `${topBarHeight}px`;
-                }
-            });
-        });
-    
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdown = document.querySelector('.nav-item.dropdown');
-            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-            const dropdownToggle = dropdown.querySelector('.nav-link.dropdown-toggle');
-            const headerTitle = document.querySelector('.header-title');
-    
-            headerTitle.getBoundingClientRect();
-    
-            setTimeout(() => {
-                headerTitle.classList.add('visible');
-            }, 300);
-    
-            dropdown.addEventListener('mouseenter', function () {
-            dropdown.classList.add('show');
-            dropdownMenu.classList.add('show');
-        });
-    
-        dropdownMenu.addEventListener('mouseenter', function () {
-            dropdown.classList.add('show');
-            dropdownMenu.classList.add('show');
-        });
-    
-        dropdown.addEventListener('mouseleave', function () {
-            dropdown.classList.remove('show');
-            dropdownMenu.classList.remove('show');
-        });
+        </div>             
         
-        dropdownMenu.addEventListener('mouseleave', function () {
-            dropdown.classList.remove('show');
-            dropdownMenu.classList.remove('show');
-        });
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                const navbarNav = document.getElementById('navbar-nav');
+                navbarNav.classList.toggle('open');
+            });
+            document.addEventListener('DOMContentLoaded', () => {
+                const scrollToTopButton = document.getElementById('scrollToTopButton');
+        
+                const handleScroll = () => {
+                    const screenPosition = window.innerHeight / 1.3;
+        
+                    // Mostrar u ocultar el botón de "Ir hacia arriba"
+                    if (window.scrollY > 350) {
+                        scrollToTopButton.classList.add('visible');
+                    } else {
+                        scrollToTopButton.classList.remove('visible');
+                    }
+                };
+        
+                // Función para volver al inicio
+                const scrollToTop = () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth', 
+                    });
+                };
+
+
+        
+                // Agregar el evento click al botón de "Ir hacia arriba"
+                scrollToTopButton.addEventListener('click', scrollToTop);
+                window.addEventListener('scroll', handleScroll);
+                handleScroll();
+            });
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();  // Evita que el formulario se envíe normalmente
             
-        dropdownToggle.addEventListener('click', function (e) {
-            window.location.href = dropdownToggle.getAttribute('href');
-        });
-    
-        document.addEventListener('click', function (e) {
-            const isClickInside = dropdown.contains(e.target);
-            if (!isClickInside) {
-                dropdown.classList.remove('show');
-                dropdownMenu.classList.remove('show');
-                }
+                // Obtener los valores del formulario
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("phone").value;
+                const message = document.getElementById("message").value;
+            
+                // Generar el mensaje que se mostrará en el modal
+                const modalMessage = `
+                    Nombre: ${name} <br>
+                    Email: ${email} <br>
+                    Teléfono: ${phone} <br>
+                    Mensaje: ${message}
+                `;
+            
+                // Mostrar el modal con el mensaje
+                document.getElementById("modal-message").innerHTML = modalMessage;
+                document.getElementById("modal").style.display = "block";
+                
+                // Limpiar el formulario
+                document.getElementById("contact-form").reset();
             });
-    
-        });
-    
-        document.addEventListener("DOMContentLoaded", function () {
-            const navbarToggler = document.querySelector('.navbar-toggler');
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-    
-            navbarToggler.addEventListener('click', function () {
-                navbarCollapse.classList.toggle('show');
+            
+            // Cerrar el modal
+            document.getElementById("close-modal").addEventListener("click", function() {
+                document.getElementById("modal").style.display = "none";
             });
-    
-            document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-                link.addEventListener('click', function () {
-                    navbarCollapse.classList.remove('show');
-                });
+            
+            document.getElementById("close-modal-btn").addEventListener("click", function() {
+                document.getElementById("modal").style.display = "none";
             });
-    
-            document.addEventListener('click', function (e) {
-                if (!navbarCollapse.contains(e.target) && e.target !== navbarToggler) {
-                    navbarCollapse.classList.remove('show');
-                }
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-        const contactForm = document.querySelector('.contact-form');
-
-        function handleScroll() {
-            const formPosition = contactForm.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.3;
-
-            if (formPosition < screenPosition) {
-                contactForm.classList.add('visible');
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll);
-        });
-
-        // Mostrar el botón cuando se hace scroll hacia abajo
-        window.addEventListener('scroll', function() {
-            const scrollButton = document.querySelector('.scroll-to-top');
-            if (window.scrollY > 200) { // Mostrar el botón después de 200 píxeles
-                scrollButton.style.display = 'block';
-            } else {
-                scrollButton.style.display = 'none';
-            }
-        });
-
-        // Función para hacer scroll hasta arriba
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-        </script>
+        
+        </script>                
     </div>
 </body>
 </html>

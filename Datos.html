@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koulutus/Desarrollo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="desarrollo.css">
+    <link rel="stylesheet" href="datos.css">
     <link rel="icon" href="/Imagenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -22,7 +22,7 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="Desarrollo.html">Portafolio</a>
+                        <a class="nav-link" href="Datos.html">Portafolio</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo de software</a></li>
                             <li><a class="dropdown-item" href="Robotica.html">Robotica y domotica</a></li>
@@ -44,7 +44,7 @@
                             <li><a class="dropdown-item" href="Elegirnos.html">¿Por qué elegirnos?</a></li>
                         </ul>
                     </li>
-                   
+                    
                 </ul>
 
                 <!-- Botón Contactanos -->
@@ -52,7 +52,7 @@
             </div>
         </nav>
 
-         <!-- Header con imagen -->
+        <!-- Header con imagen -->
         <header class="header-image">
             
         </header>
@@ -62,29 +62,25 @@
     <div class="services-container">
         <!-- Servicio 1 -->
         <div class="service">
-            <img src="Imagenes/desarrollo1.png" alt="Servicio 1" class="service-img">
-            <h3>Soluciones a Medida</h3>
-            <p>Son soluciones de software desarrolladas específicamente para satisfacer las
-                necesidades particulares de una empresa, organización o usuario individual.</p>
+            <img src="Imagenes/datos1.png" alt="Servicio 1" class="service-img">
+            <h3>Gestión Integral de Datos</h3>
+            <p>Ofrecemos soluciones completas para el manejo de datos, abarcando su almacenamiento seguro, procesamiento eficiente y análisis avanzado. Nuestro enfoque integral te permite transformar los datos en información valiosa para la toma de decisiones estratégicas.</p>
             <button class="btn-modal" onclick="openModal('modal1')">Ver más</button>
         </div>
 
         <!-- Servicio 2 -->
         <div class="service">
-            <img src="Imagenes/desarrollo2.png" alt="Servicio 2" class="service-img">
-            <h3>Soluciones Multiplataformas</h3>
-            <p>Son aplicaciones o software que están diseñados para funcionar en varios sistemas
-                operativos o dispositivos diferentes sin necesidad de modificaciones significativas.</p>
+            <img src="Imagenes/datos2.png" alt="Servicio 2" class="service-img">
+            <h3>Soluciones Avanzadas de Datos e Inteligencia Artificial </h3>
+            <p>Soluciones que combinan Machine Learning, IA e integración de datos para optimizar procesos, automatizar tareas y generar insights estratégicos.</p>
             <button class="btn-modal" onclick="openModal('modal2')">Ver más</button>
         </div>
 
         <!-- Servicio 3 -->
         <div class="service">
-            <img src="Imagenes/desarrollo3.png" alt="Servicio 3" class="service-img">
-            <h3>Gestión de
-                Proyectos
-                Software</h3>
-            <p>Es la gestión de recursos y tareas para desarrollar software de alta calidad. En Koulutus aplicamos prácticas y metodologías que garantizan proyectos efectivos y eficientes.</p>
+            <img src="Imagenes/datos3.png" alt="Servicio 3" class="service-img">
+            <h3>Gestión e Integración de Bases de Datos</h3>
+            <p>Brindamos soluciones para la gestión, integración y almacenamiento de datos, asegurando eficiencia y confiabilidad en el manejo de información clave.</p>
             <button class="btn-modal" onclick="openModal('modal3')">Ver más</button>
         </div>
         
@@ -96,28 +92,68 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal('modal1')">&times;</span>
         <div class="modal-header">
-            <h2 class="modal-title">Soluciones a Medida</h2>
+            <h2 class="modal-title">ALMACENAMIENTO DE DATOS</h2>
+            <p>Soluciones para almacenar grandes
+                volúmenes de datos estructurados y no estructurados. 
+                </p>
         </div>
         <div class="modal-body">
             <div class="feature">
-                <h3><span class="icon">✔</span> Adaptación Precisa</h3>
-                <p>Se diseñan para cumplir exactamente con los requisitos y procesos de la empresa.</p>
+                <h3><span class="icon">🗄️</span> Hadoop Hdfs</h3>
+                <p>Sistema de archivos distribuido que permite el almacenamiento de grandes conjuntos
+                    de datos.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">📈</span> Escalabilidad</h3>
-                <p>Pueden evolucionar junto con el crecimiento de la empresa, agregando nuevas funcionalidades o adaptándose a nuevas necesidades.</p>
+                <h3><span class="icon">☁️</span> Amazon S3</h3>
+                <p>Almacenamiento en la nube que permite guardar y recuperar cualquier cantidad de datos en cualquier momento.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🔗</span> Integración</h3>
-                <p>Pueden integrarse completamente con otros sistemas existentes en la organización, permitiendo una mejor coherencia y flujo de datos.</p>
+                <h3><span class="icon">📦</span> Google Cloud Storage</h3>
+                <p>Servicio de almacenamiento en la nube de Google
+                    que ofrece escalabilidad y durabilidad.</p>
+            </div>
+            <div class="modal-header">
+                <h2 class="modal-title">PROCESAMIENTO DE DATOS</h2>
+                <p>Herramientas y frameworks para el
+                    procesamiento de datos en tiempo real y por lotes.
+                    </p>
             </div>
             <div class="feature">
-                <h3><span class="icon">⚙️</span> Control Completo</h3>
-                <p>La empresa tiene total control sobre el software, incluyendo actualizaciones, cambios y mejoras, lo que permite mayor flexibilidad.</p>
+                <h3><span class="icon">⚡</span> Apache Spark</h3>
+                <p>Motor de procesamiento de datos que permite realizar análisis en
+                    tiempo real y procesamiento de grandes volúmenes de datos.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🏆</span> Ventaja Competitiva</h3>
-                <p>Ofrece una solución única que puede diferenciar a la empresa en el mercado.</p>
+                <h3><span class="icon">🌊</span> Apache Beam</h3>
+                <p>Modelo de programación unificado para el procesamiento de
+                    datos por lotes y en tiempo real.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🚀</span> Apache Flink</h3>
+                <p>Framework para el procesamiento de datos en flujo y por lotes.</p>
+            </div>
+            <div class="modal-header">
+                <h2 class="modal-title">ANÁLISIS DE DATOS</h2>
+                <p>Herramientas para analizar y visualizar
+                    datos, facilitando la toma de decisiones. 
+                    </p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📊</span> Tableau</h3>
+                <p>Herramienta de visualización de datos que permite crear
+                    dashboards interactivos.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🐝</span> Apache Hive</h3>
+                <p>Data warehouse que facilita el uso de SQL para el análisis
+                    de grandes volúmenes de datos en Hadoop.
+                    </p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">📈</span> Power Bi</h3>
+                <p>Herramienta de Microsoft para análisis y visualización de
+                    datos con conectividad a múltiples fuentes.
+                    </p>
             </div>
         </div>
     </div>
@@ -127,31 +163,53 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal('modal2')">&times;</span>
         <div class="modal-header">
-            <h2 class="modal-title">Soluciones Multiplataforma</h2>
+            <h2 class="modal-title">MACHINE LEARNING Y AI</h2>
+            <p>Servicios que permiten aplicar modelos de
+                aprendizaje automático a grandes conjuntos de datos.
+                </p>
         </div>
         <div class="modal-body">
             <div class="feature">
-                <h3><span class="icon">🌍</span> Ampliación Del Alcance</h3>
-                <p>Permiten que la aplicación llegue a un público
-                    más amplio al ser compatible con diversos
-                    dispositivos y sistemas operativos.</p>
+                <h3><span class="icon">🗄️</span>Tensorflow</h3>
+                <p>Biblioteca de código abierto para la creación de modelos
+                    de aprendizaje automático.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">📱</span> Consistencia De La Experiencia Del Usuario</h3>
-                <p>Experiencia coherente en diferentes dispositivos.</p>
+                <h3><span class="icon">☁️</span> Amazon Sagemaker</h3>
+                <p>Servicio de machine learning que permite construir,
+                    entrenar y desplegar modelos en la nube.
+                    </p>
             </div>
             <div class="feature">
-                <h3><span class="icon">💰</span> Ahorro De Tiempo Y Costos</h3>
-                <p>Desarrollar una única base de código para todas las
-                    plataformas puede ser más eficiente y menos costoso
-                    que desarrollar y mantener versiones separadas para
-                    cada plataforma.</p>
+                <h3><span class="icon">📦</span> Google Ai Platform</h3>
+                <p>Plataforma que ayuda a desarrollar modelos de machine
+                    learning a gran escala.</p>
+            </div>
+            <div class="modal-header">
+                <h2 class="modal-title">INTEGRACION Y ETL
+                    (EXTRACT, TRANSFORM, LOAD)</h2>
+                <p>Herramientas para integrar y transformar datos de
+                    diferentes fuentes.
+                    Arquitectura en la Nube: Diseño y desarrollo de arquitecturas
+                    escalables y seguras en AWS Automatización y Orquestación:
+                    Implementación de herramientas como AWS Glue, AWS Lambda,
+                    y Step Functions para automatizar procesos de ETL.
+                    </p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🔧</span> Mantenimiento Simplificado</h3>
-                <p>Actualizar una sola versión de la aplicación en lugar de
-                    múltiples versiones específicas para cada plataforma
-                    facilita el mantenimiento y reduce errores.</p>
+                <h3><span class="icon">⚡</span> Apache Nif</h3>
+                <p>Herramienta para la automatización de flujos de datos
+                    entre sistemas.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🌊</span> Talend</h3>
+                <p>Plataforma de integración de datos que proporciona
+                    herramientas para ETL.</p>
+            </div>
+            <div class="feature">
+                <h3><span class="icon">🚀</span> Informática</h3>
+                <p>Solución para integración de datos y gestión de datos en
+                    la nube.</p>
             </div>
         </div>
     </div>
@@ -161,38 +219,42 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal('modal3')">&times;</span>
         <div class="modal-header">
-            <h2 class="modal-title">Gestión de
-                Proyectos
-                Software</h2>
-        </div>
-        <div class="modal-header">
-            <h2 class="modal-title">Metodologías Ágiles</h2>
-            <p>Una metodología interactiva
-                y flexible que se enfoca en entregas rápidas y
-                continuas, adaptándose a cambios en los
-                requisitos a lo largo del proyecto.</p>
+            <h2 class="modal-title">MANEJO DE BASE DE MANEJO DE BASE DE
+                DATOS EN SQL SERVER</h2>
+            <p>Administración de bases de Datos: Configuración,
+                mantenimiento y optimización de bases de datos en SQL Server.
+                </p>
         </div>
         <div class="modal-body">
             <div class="feature">
-                <h3><span class="icon">🤝</span> Scrum</h3>
-                <p>Es un proceso en el que se aplican de
-                    manera regular un conjunto de buenas
-                    prácticas para trabajar colaborativamente,
-                    en equipo y obtener el mejor resultado
-                    posible de proyectos.</p>
+                <h3><span class="icon">⚙️</span> Optimización De Rendimiento</h3>
+                <p>Análisis y mejora del rendimiento de consultas y bases
+                    de datos. Creación de consultas, procedimientos almacenados,
+                    funciones y otros componentes de SQL.</p>
+            </div>
+            
+            <div class="modal-header">
+                <h2 class="modal-title">INTEGRACIÓN Y ALMACENAMIENTO DE DATOS</h2>
+                <p>Permitiendo a las empresas consolidar, almacenar
+                    y gestionar grandes volúmenes de datos de diversas fuentes para
+                    un análisis eficaz y toma de decisiones informada.</p>
+            </div>
+            
+            <div class="feature">
+                <h3><span class="icon">🏢</span> Data Warehousing</h3>
+                <p>Diseño e implementación de almacenes de datos
+                    escalables.</p>
             </div>
             <div class="feature">
-                <h3><span class="icon">🗂️</span> Kanban</h3>
-                <p>Se trata de un método visual de gestión
-                    de proyectos que permite a los equipos
-                    visualizar sus flujos de trabajo y la carga
-                    de trabajo.</p>
+                <h3><span class="icon">🌊</span> Data Lakes</h3>
+                <p>Creación de data lakes para almacenamiento de
+                    grandes volúmenes de datos no estructurados y
+                    semiestructurados.</p>
             </div>
             <div class="feature">
-                
-            </div>
-            <div class="feature">
-                
+                <h3><span class="icon">🔗</span> Integración De Datos</h3>
+                <p>Conexión y sincronización de diversas fuentes de
+                    datos para una vista unificada.</p>
             </div>
         </div>
     </div>
@@ -287,7 +349,7 @@
                 window.addEventListener('scroll', handleScroll);
                 handleScroll();
             });
-
+            
             function openModal(modalId) {
                 const modal = document.getElementById(modalId);
                 if (modal) {
