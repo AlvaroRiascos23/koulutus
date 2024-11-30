@@ -798,23 +798,22 @@ a {
 
     .header-content {
         margin-top: 50px;
-        padding: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-right: 20px;
-        margin-left: 20px;
+        padding: 30px 15px;
+        width: 90%;
+        
     }
     .header-section{
         max-width: 210px;
-        
     }
 
     .header-text h1 {
-        font-size: 30px;
+        width: 90%;
+        font-size: 25px;
     }
 
     .header-text h1 .highlight {
-        font-size: 35px;
+width: 90%;
+        font-size: 30px;
     }
 
     .info-section {
