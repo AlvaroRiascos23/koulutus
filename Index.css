@@ -798,7 +798,15 @@ a {
 
     .header-content {
         margin-top: 50px;
-        padding: 30px 15px;
+        padding: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .header-section{
+        max-width: 210px;
+        
     }
 
     .header-text h1 {
