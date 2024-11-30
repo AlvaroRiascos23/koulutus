@@ -1,16 +1,31 @@
 /*CSS DE LOS ICONOS DE LA NAV-BAR*/
+
+@font-face {
+    font-family: 'Goldplay Alt';
+    src: url('fonts/GoldplayAlt-Regular.woff2') format('woff2'),
+         url('fonts/GoldplayAlt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Goldplay Alt';
+    src: url('fonts/GoldplayAlt-Light.woff2') format('woff2'),
+         url('fonts/GoldplayAlt-Light.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 body{
-    font-family: 'Arial', sans-serif;
+    font-family: 'GoldplayAlt-Bold', sans-serif,;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden; 
-    background: linear-gradient(to right, #0b1a38 5%, #9177d7 95%);
+    background: linear-gradient(to right, #0b1a38 5%, #6638B6 95%);
 }
 .navbar {
-    background-color: #0b2a42; 
+    background-color: #0b1a38; 
     padding:15px 0;
-    font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,6 +38,7 @@ body{
 }
 
 .navbar-container {
+    font-family: 'GoldplayAlt-Bold', sans-serif,;
     width: 90%; 
     max-width: 1200px; 
     margin: 0 auto;
@@ -61,12 +77,12 @@ body{
 }
 
 .navbar-nav .nav-link:hover {
-    color: #7f61df; 
-    border-bottom: 2px solid #7f61df; 
+    color: #6638B6; 
+    border-bottom: 2px solid #6638B6; 
 }
 
 .btn-contact-us {
-    background-color: #562ed9; 
+    background-color: #6638B6; 
     color: #ffffff;
     font-size: 16px;
     font-weight: bold; 
@@ -79,7 +95,7 @@ body{
 }
 
 .btn-contact-us:hover {
-    background-color: #5b45b0;
+    background-color: #6638B6;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -88,7 +104,7 @@ body{
     position: absolute;
     top: 100%; 
     left: 0;
-    background-color: #182a4a; 
+    background-color: #0b1a38; 
     padding: 10px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
     z-index: 1000;
@@ -112,7 +128,7 @@ body{
 }
 
 .dropdown-item:hover {
-    background-color: #7c5ce2; 
+    background-color: #6638B6; 
     color: #ffffff; 
 }
 .logo-img{
@@ -162,12 +178,12 @@ a {
 }
 
 .header-text h1 .highlight {
-    color: #7c5ce2;
+    color: #6638B6;
     font-size: 90px;
 }
 
 .header-text h1 .cursor {
-    color: #7c5ce2;
+    color: #6638B6;
     animation: blink 1s steps(1) infinite;
 }
 
@@ -286,7 +302,7 @@ a {
     flex-direction: row;
     max-width: 1250px;
     align-items: center;
-    background: rgba(255, 255, 255, 0.411);
+    background: #0b1a3850;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -323,11 +339,11 @@ a {
 .info-text {
     flex: 1;
     padding: 20px 30px;
-    color: #423b3b;
+    color: white;
 }
 
 .info-text h3 {
-    color: #0b1a38;
+    color: #F0B323;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -342,12 +358,12 @@ a {
 }
 
 .text-info-2{
-    color: #6a42d9 ;
+    color: white ;
 }
 
 
 .info-text a {
-    color: #7c5ce2;
+    color: #6638B6;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -366,7 +382,7 @@ a {
 .socios-aliados {
     margin-top: 200px;
     padding: 50px 20px;
-    background: linear-gradient(to bottom, #9b85d5, #cec1ef);
+    background: linear-gradient(to bottom, #6638B6, #cec1ef);
     text-align: center;
     color: #333;
 }
@@ -418,7 +434,7 @@ a {
 
 .footer-line {
     height: 2px;
-    background-color: #2c215c; 
+    background-color: #6638B6; 
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -459,6 +475,7 @@ a {
     margin-right: 100px;
     margin-top: -10px;
     text-align: center;
+    justify-content: right;
 }
 
 .footer-social h4 {
@@ -478,7 +495,7 @@ a {
     justify-content: center;
     width: 60px; 
     height: 60px;
-    background-color:#1e3254; 
+    background-color:#0b1a38; 
     border-radius: 10px; 
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -513,7 +530,7 @@ a {
 .scroll-to-top {
     width: 50px;
     height: 50px;
-    background-color: #5833d1;
+    background-color: #0b1a38;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -542,7 +559,7 @@ a {
 
 /* Efecto hover */
 .scroll-to-top:hover {
-    background-color: #6c59b7; 
+    background-color: #0b1a38; 
     transform: scale(1.1); 
 }
 
@@ -555,6 +572,7 @@ a {
     align-items: center;
     z-index: 1000; 
     width: 30px;
+    background-color: transparent;
 }
 
 .social-icons a {
@@ -584,6 +602,230 @@ a {
     display: block;
     margin: auto;
 }
+.logo-footer img{
+    justify-items: left;
+    width: 148px;
+    height: 148px;
+}
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .navbar-container {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 40px;
+    }
 
+    .header-text h1 {
+        font-size: 60px;
+    }
 
+    .header-text h1 .highlight {
+        font-size: 70px;
+    }
 
+    .header-icons {
+        gap: 20px;
+    }
+
+    .header-image img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .btn-contact-us {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .modelo-gestion-section {
+        padding: 80px 50px;
+    }
+
+    .modelo-diagrama img {
+        width: 90%;
+    }
+
+    .info-section {
+        padding: 40px 50px;
+    }
+
+    .info-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-image {
+        max-width: 100%;
+    }
+}
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .navbar-container {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .header-text h1 {
+        font-size: 60px;
+    }
+
+    .header-text h1 .highlight {
+        font-size: 70px;
+    }
+
+    .header-icons {
+        gap: 20px;
+    }
+
+    .header-image img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .btn-contact-us {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .modelo-gestion-section {
+        padding: 80px 50px;
+    }
+
+    .modelo-diagrama img {
+        width: 90%;
+    }
+
+    .info-section {
+        padding: 40px 50px;
+    }
+
+    .info-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text h1 .highlight {
+        font-size: 50px;
+    }
+
+    .header-image img {
+        width: 300px;
+    }
+
+    .modelo-diagrama img {
+        width: 100%;
+    }
+
+    .socios-aliados h2 {
+        font-size: 28px;
+    }
+
+    .logos-container {
+        gap: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-info, 
+    .footer-social {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+   .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+.btn-contact-us{
+    margin-top: 10px;
+}
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+    }
+
+    .header-content {
+        margin-top: 50px;
+        padding: 30px 15px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .header-text h1 .highlight {
+        font-size: 35px;
+    }
+
+    .info-section {
+        padding: 30px 20px;
+    }
+
+    .info-block {
+        gap: 10px;
+    }
+
+    .socios-aliados h2 {
+        font-size: 24px;
+    }
+
+    .logos-container img {
+        width: 100px;
+    }
+
+    .footer-container {
+        padding: 20px 10px;
+    }
+}
