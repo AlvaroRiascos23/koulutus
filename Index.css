@@ -22,6 +22,10 @@ body{
     box-sizing: border-box;
     overflow-x: hidden; 
     background: linear-gradient(to right, #0b1a38 5%, #6638B6 95%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 .navbar {
     background-color: #0b1a38; 
