@@ -494,6 +494,237 @@ h2{
   .no-scroll {
     overflow: hidden;
   }
+
+  
+/* Sección Socios, Aliados y Clientes */
+.socios-aliados {
+    margin-top: 200px;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #6638B6, #cec1ef);
+    text-align: center;
+    color: #333;
+}
+
+.socios-aliados h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #0b1a38;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-item img {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.logo-item img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* FOOTER*/
+.footer-section {
+    background: transparent;
+    margin-top: 60px;
+    padding: 20px 0;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-line {
+    height: 2px;
+    background-color: #6638B6; 
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-info p,
+.footer-info a {
+    font-size: 16px;
+    color: #e1d8f1;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    color: #ffffff;
+}
+
+.footer-social {
+    margin-right: 100px;
+    margin-top: -10px;
+    text-align: center;
+    justify-content: right;
+}
+
+.footer-social h4 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.footer-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px;
+    background-color:#0b1a38; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.footer-social-icons a img {
+    width: 35px;
+    height: 35px;
+    transition: filter 0.3s ease;
+    filter: brightness(0.8) grayscale(1) invert(0.5);
+}
+
+.footer-social-icons a img:hover {
+    filter: none; 
+    transform: scale(1.1); 
+}
+
+.footer-bottom {
+    margin-top: 150px;
+    font-size: 18px;
+    color: #e1d8f1;
+}
+
+.footer-bottom span {
+    font-weight: bold;
+}
+
+
+
+/*CSS DE LOS ICONOS DE LAS REDES SOCIALES*/
+/* Botón de "Ir hacia arriba" */
+.scroll-to-top {
+    width: 50px;
+    height: 50px;
+    background-color: #0b1a38;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0; 
+    visibility: hidden;
+    position: relative; 
+    top: -20px; 
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top span {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Efecto hover */
+.scroll-to-top:hover {
+    background-color: #0b1a38; 
+    transform: scale(1.1); 
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 30px; 
+    right: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    z-index: 1000; 
+    width: 30px;
+    background-color: transparent;
+}
+
+.social-icons a {
+    margin: 15px 0;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); 
+}
+
+.social-icon {
+    width: 90px; 
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: auto; 
+    height: 70%;
+    max-width: 70%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+.logo-footer img{
+    justify-items: left;
+    width: 148px;
+    height: 148px;
+}
   
 /*@medias para responsive*/
 @media (max-width: 768px) {
