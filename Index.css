@@ -803,9 +803,13 @@ a {
         
     }
     .header-section{
-        max-width: 210px;
+        max-width: 350px;
     }
 
+    .header-icons{
+        display: flex;
+        flex-direction: column;
+    }
     .header-text h1 {
         width: 90%;
         font-size: 25px;
