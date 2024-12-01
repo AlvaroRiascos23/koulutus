@@ -1097,7 +1097,7 @@ width: 90%;
     .social-icon a{
         
         margin-right: 0px;
-        
+        margin: 0px;
         padding: 0px;
     
 }
@@ -1118,79 +1118,183 @@ width: 90%;
 
 
 @media (max-width: 100px) {
+    .inicio-page{
+        max-width: 100%;
+    }
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 120px;
+    height: 120px;
+}
+.navbar{
+    max-width: 90%;
+}
+    
+   .navbar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
 
-    .navbar-container {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-     }
- 
-     .navbar-nav {
-         flex-direction: column;
-         gap: 15px;
-     }
- .btn-contact-us{
-     margin-top: 10px;
- }
-     .menu-toggle {
-         display: block;
-         font-size: 24px;
-         color: white;
-     }
- 
-     .header-content {
-         margin-top: 50px;
-         padding: 30px 15px;
-         width: 90%;
-         
-     }
-     .header-section{
-         max-width: 350px;
-     }
- 
-     .header-icons{
-         display: flex;
-         flex-direction: column;
-     }
-     .header-text h1 {
-         justify-items: center;
-         width: 90%;
-         font-size: 25px;
-     }
-     .header-text{
-         align-items: center;
-         justify-items: center;
-     }
-     .header-h1{
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         gap: 10px;
-     }
- 
-     .header-text h1 .highlight {
- width: 90%;
-         font-size: 30px;
-     }
- 
-     .info-section {
-         padding: 30px 20px;
-     }
- 
-     .info-block {
-         gap: 10px;
-     }
- 
-     .socios-aliados h2 {
-         font-size: 24px;
-     }
- 
-     .logos-container img {
-         width: 100px;
-     }
- 
-     .footer-container {
-         padding: 20px 10px;
-     }
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+.btn-contact-us{
+    margin-top: 10px;
+}
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+    }
+
+    .header-content {
+        margin-top: 50px;
+        padding: 30px 15px;
+        width: 90%;
+        
+    }
+    .header-section{
+        max-width: 250px;
+    }
+
+    .header-icons{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-text h1 {
+        justify-items: center;
+        width: 70%;
+        font-size: 25px;
+    }
+    .header-text{
+        align-items: center;
+        justify-items: center;
+    }
+    .header-text p{
+        max-width: 60%;
+    }
+    .header-h1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .header-image{
+        
+        width: 80%;
+    }
+
+    .header-text h1 .highlight {
+width: 90%;
+        font-size: 30px;
+    }
+    .values-container {
+        grid-template-columns: 1fr; /* Tarjetas en una sola columna */
+        margin: 10px auto;
+    }
+    .value-card {
+        width: 90%; /* Ajustar el ancho para móviles */
+        margin: 10px auto;
+    }
+
+    /* Equipo de trabajo */
+    .equipo-titulo{
+        width: 95%;
+    }
+    .area-equipo{
+        width: 60%;
+    }
+
+    .text-perfil {
+        width: 100%; /* Ajustar el ancho del texto */
+        margin-left: 0;
+        text-align: center; /* Centrar texto */
+        padding-top: 20px;
+    }
+
+    .name-perfil, .cargo-perfil {
+        width: 70%; /* Ajustar ancho */
+        text-align: center;
+        margin-top: 45px;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        width: 75%; /* Ajustar el contenedor */
+        margin-left: 60px;
+    }
+
+    /* Modal en dispositivos pequeños */
+    .modal-content {
+        max-width: 60%; /* Reducir el tamaño del modal */
+        max-height: 60%; /* Asegurar que no ocupe toda la pantalla */
+    }
+
+    .info-section {
+        padding: 30px 20px;
+    }
+
+    .info-block {
+        gap: 10px;
+    }
+
+    .socios-aliados h2 {
+        font-size: 24px;
+    }
+
+    .logos-container img {
+        width: 100px;
+    }
+
+    .footer-container {
+        padding: 20px 10px;
+    }
+    .footer-social{
+        max-width: 70%;
+    }
+    .social-icons{
+        width: 10%;
+    }
+    .social-icon{
+        width: 100px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .social-icon img{
+        
+            width: 100px;
+            margin: 0px;
+            padding: 0px;
+        
+    }
+    
+    .social-icon a{
+        
+        margin-right: 0px;
+        margin: 0px;
+        padding: 0px;
+    
+}
+    .navbar-brand{
+        padding: 0px;
+        margin: 0px;
+    }
+    .footer-social-icons{
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    body{
+        width: 100%;
+    }
  }
  
