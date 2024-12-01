@@ -850,3 +850,82 @@ width: 90%;
         padding: 20px 10px;
     }
 }
+
+
+@media (max-width: 100px) {
+
+    .navbar-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     .navbar-nav {
+         flex-direction: column;
+         gap: 15px;
+     }
+ .btn-contact-us{
+     margin-top: 10px;
+ }
+     .menu-toggle {
+         display: block;
+         font-size: 24px;
+         color: white;
+     }
+ 
+     .header-content {
+         margin-top: 50px;
+         padding: 30px 15px;
+         width: 90%;
+         
+     }
+     .header-section{
+         max-width: 350px;
+     }
+ 
+     .header-icons{
+         display: flex;
+         flex-direction: column;
+     }
+     .header-text h1 {
+         justify-items: center;
+         width: 90%;
+         font-size: 25px;
+     }
+     .header-text{
+         align-items: center;
+         justify-items: center;
+     }
+     .header-h1{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 10px;
+     }
+ 
+     .header-text h1 .highlight {
+ width: 90%;
+         font-size: 30px;
+     }
+ 
+     .info-section {
+         padding: 30px 20px;
+     }
+ 
+     .info-block {
+         gap: 10px;
+     }
+ 
+     .socios-aliados h2 {
+         font-size: 24px;
+     }
+ 
+     .logos-container img {
+         width: 100px;
+     }
+ 
+     .footer-container {
+         padding: 20px 10px;
+     }
+ }
+ 
