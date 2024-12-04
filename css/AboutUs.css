@@ -502,6 +502,9 @@ h2{
     .navbar-container{
         width: 90%;
     }
+    .inicio-page{
+        width: 90%;
+    }
     .card{
     display: flex;
     flex-direction: column;
