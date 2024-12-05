@@ -534,11 +534,10 @@ h2{
         justify-content: space-between;
         gap: 10px;
     }
-
-
     .values-container {
         grid-template-columns: 1fr; /* Tarjetas en una sola columna */
-        margin: 10px auto;
+        margin: 1px auto;
+        width: 85%;
     }
     .value-card {
         width: 90%; /* Ajustar el ancho para móviles */
