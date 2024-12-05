@@ -570,12 +570,12 @@ a {
 .social-icons {
     position: fixed;
     bottom: 30px; 
-    right: 30px;
+    right: 2px;
     display: flex;
     flex-direction: column; 
     align-items: center;
-    z-index: 1000; 
-    width: 80px;
+    z-index: 900; 
+    width: 60px;
     background-color: transparent;
 }
 

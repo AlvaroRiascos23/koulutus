@@ -127,7 +127,7 @@
     </section>
 
     <div class="button-container">
-    <button class="toggle-btn" onclick="toggleText()"><span id="text-button">Ver más</span> <span id="arrow" class="arrow-down"></span></button>
+    <button class="toggle-btn" onclick="toggleText()">Ver más <span id="arrow" class="arrow-down"></span></button>
     </div>
     
     
@@ -653,7 +653,7 @@ infoBlocks.forEach((block) => {
         block.classList.remove('appear');
     }
 });
-            function type() {
+            function type1() {
                 if (index < text.length) {
                     typedTextElement.textContent += text.charAt(index);
                     index++;
@@ -661,7 +661,7 @@ infoBlocks.forEach((block) => {
                 }
             }
 
-            type();
+            type1();
         });
         function toggleText() {
             const text = document.getElementById("about-text");
@@ -670,11 +670,11 @@ infoBlocks.forEach((block) => {
             // Verifica si el texto está completamente visible o no
             if (text.style.maxHeight === "none") {
                 text.style.maxHeight = "260px";  // Vuelve a la altura limitada
-                button.innerText = "Ver más";
+                button.textContent = "Ver menos";
             } else {
                 text.style.maxHeight = "none";  // Expande el texto completamente
                 button.style.width = "14%";
-                button.innerText = "Ver menos";
+                button.textContent = "Ver menos";
             }
         }
         document.addEventListener("DOMContentLoaded", function() {
