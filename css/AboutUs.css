@@ -499,6 +499,12 @@ h2{
 }
 
 @media (max-width: 576px) {
+    .about-section{
+        padding-top: 200px;
+    }
+  .header-image{
+    display: none;
+  }
     .navbar-container{
         width: 90%;
     }
@@ -517,7 +523,7 @@ h2{
     }
     .header-text h1 {
         justify-items: center;
-        width: 90%;
+        width: 80%;
         font-size: 25px;
     }
     .header-text{
@@ -525,7 +531,7 @@ h2{
         justify-items: center;
     }
     .header-text p{
-        max-width: 80%;
+        max-width: 70%;
     }
     .header-h1{
         display: flex;
@@ -533,7 +539,7 @@ h2{
         justify-content: space-between;
         gap: 10px;
     }
-  
+
 
     .values-container {
         grid-template-columns: 1fr; /* Tarjetas en una sola columna */
@@ -575,6 +581,9 @@ h2{
     .modal-content {
         max-width: 60%; /* Reducir el tamaño del modal */
         max-height: 60%; /* Asegurar que no ocupe toda la pantalla */
+    }
+    .footer-social{
+        width: 50%;
     }
 }
 
