@@ -537,11 +537,17 @@ h2{
     .values-container {
         grid-template-columns: 1fr; /* Tarjetas en una sola columna */
         margin: 1px auto;
-        width: 85%;
+        width: 70%;
     }
     .value-card {
         width: 90%; /* Ajustar el ancho para móviles */
         margin: 10px auto;
+    }
+    .button-container{
+        width: 100%;
+    }
+    .toggle-btn{
+        width: 50%;
     }
 
     /* Equipo de trabajo */
