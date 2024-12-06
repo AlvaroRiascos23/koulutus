@@ -487,10 +487,7 @@ h2{
         gap: 20px;
     }
 
-    .footer-info, 
-    .footer-social {
-        text-align: center;
-    }
+   
 }
 
 @media (max-width: 576px) {
@@ -562,7 +559,7 @@ h2{
         width: 100%; /* Ajustar el ancho del texto */
         margin-left: 0;
         text-align: center; /* Centrar texto */
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     .name-perfil, .cargo-perfil {
@@ -582,9 +579,7 @@ h2{
         max-width: 60%; /* Reducir el tamaño del modal */
         max-height: 60%; /* Asegurar que no ocupe toda la pantalla */
     }
-    .footer-social{
-        width: 50%;
-    }
+    
 }
 
 
