@@ -850,6 +850,10 @@ width: 90%;
     .footer-container {
         padding: 20px 10px;
     }
+    .footer-info{
+        text-align: justify;
+    }
+    
 }
 
 
