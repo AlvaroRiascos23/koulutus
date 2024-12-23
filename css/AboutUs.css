@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Goldplay Alt';
+    src: url('../fonts/GoldplayAlt-Regular.woff2') format('woff2'),
+         url('../fonts/GoldplayAlt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Goldplay Alt';
+    src: url('../fonts/GoldplayAlt-Light.woff2') format('woff2'),
+         url('../fonts/GoldplayAlt-Light.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* Estilos para el header */
 .header-image {
     position: relative;
@@ -52,7 +68,7 @@
 .about-section {
     margin: 20px auto;  
     width: 62%;  
-    font-family: 'GoldplayAlt-Bold', sans-serif,; 
+    font-family: Goldplay Alt, sans-serif; 
     color: white;  
     padding: 20px; 
     text-align: justify; 
@@ -68,7 +84,7 @@
     transition: max-height 0.3s ease-out; 
 }
 .button-container {
-    font-family: 'GoldplayAlt-Bold', sans-serif,;
+    font-family: Goldplay Alt, sans-serif;
     display: flex;  
     justify-content: center;  
     margin-top: 10px;  
@@ -78,13 +94,14 @@ h2{
     text-align: center;
     
 }
+
 /*Boton ver mas*/
 #text-button{
-    font-family: 'GoldplayAlt-Bold', sans-serif,;
+    font-family: Goldplay Alt, sans-serif;
     
 }
 .toggle-btn {
-    font-family: 'GoldplayAlt-Bold', sans-serif,;
+    font-family: Goldplay Alt, sans-serif;
     display: block;
     margin-top: 12px;
     padding: 10px 10px;
@@ -155,14 +172,14 @@ h2{
 /*Perfil del equipo de trabajo*/
 
 .equipo-titulo{
-    font-family: 'GoldplayAlt-Bold', sans-serif,;  
+    font-family: Goldplay Alt, sans-serif;  
     width: 1250px;
     text-align: center;
     margin-top: 1px;
 }
 
 .area-equipo{
-    font-family: 'GoldplayAlt-Bold', sans-serif,;  
+    font-family: Goldplay Alt, sans-serif;  
     width: 1250px;
     text-align: left;
     margin-left: 120px;
@@ -172,7 +189,7 @@ h2{
 .about-section-perfil {
    
     width: 100%;  
-    font-family: 'GoldplayAlt-Bold', sans-serif,;  
+    font-family: Goldplay Alt, sans-serif;  
     color: white;  
     padding: 2px; 
     text-align: justify; 
@@ -187,10 +204,10 @@ h2{
     text-align: justify;
     width: 700px;
     margin-left: 50px;
-    font-family: 'GoldplayAlt-Bold', sans-serif,; 
+    font-family: Goldplay Alt, sans-serif; 
 }
 .name-perfil{
-    font-family: 'GoldplayAlt-Bold', sans-serif,;  
+    font-family: Goldplay Alt, sans-serif;  
     text-align: left;
     width: 400px;
     height: 15px;
@@ -200,7 +217,7 @@ h2{
   
 }
 .cargo-perfil{
-    font-family: 'GoldplayAlt-Bold', sans-serif,;  
+    font-family: Goldplay Alt, sans-serif;  
     text-align: left;
     width: 400px;
     height: 15px;
