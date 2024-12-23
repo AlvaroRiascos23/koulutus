@@ -2,21 +2,21 @@
 
 @font-face {
     font-family: 'Goldplay Alt';
-    src: url('fonts/GoldplayAlt-Regular.woff2') format('woff2'),
-         url('fonts/GoldplayAlt-Regular.woff') format('woff');
+    src: url('../fonts/GoldplayAlt-Regular.woff2') format('woff2'),
+         url('../fonts/GoldplayAlt-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Goldplay Alt';
-    src: url('fonts/GoldplayAlt-Light.woff2') format('woff2'),
-         url('fonts/GoldplayAlt-Light.woff') format('woff');
+    src: url('../fonts/GoldplayAlt-Light.woff2') format('woff2'),
+         url('../fonts/GoldplayAlt-Light.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 body{
-    font-family: 'GoldplayAlt-Bold', sans-serif,;
+    font-family: Goldplay Alt, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -43,7 +43,7 @@ body{
 }
 
 .navbar-container {
-    font-family: 'GoldplayAlt-Bold', sans-serif,;
+    font-family: Golplay Alt, sans-serif;
     width: 90%; 
     max-width: 1200px; 
     margin: 0 auto;
@@ -79,6 +79,8 @@ body{
     text-decoration: none; 
     transition: color 0.3s;
     padding: 5px 0;
+    font-family: Goldplay Alt, sans-serif;
+    
 }
 
 .navbar-nav .nav-link:hover {
@@ -100,7 +102,7 @@ body{
 }
 
 .btn-contact-us:hover {
-    background-color: #6638B6;
+    
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -149,6 +151,7 @@ ul {
 
 a {
     text-decoration: none;
+    font-family: Goldplay Alt, sans-serif !important;
 }
 
 /* Estilo del Header */
@@ -360,6 +363,7 @@ a {
     line-height: 1.6;
     margin: 0;
     text-align: justify;
+    font-family: Goldplay Alt, sans-serif !important;
 }
 
 .text-info-2{
@@ -425,6 +429,9 @@ a {
     align-items: center;
     padding: 10px;
 }
+p {
+    font-family: Goldplay Alt, sans-serif !important;
+  }
 
 
 /* FOOTER*/
@@ -470,6 +477,7 @@ a {
     color: #e1d8f1;
     margin: 5px 0;
     text-decoration: none;
+    font-family:  Alt, sans-serif !important;
 }
 
 .footer-info a:hover {
