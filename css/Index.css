@@ -1,10 +1,10 @@
 /*CSS DE LOS ICONOS DE LA NAV-BAR*/
 
 @font-face {
-    font-family: 'Goldplay Alt';
+    font-family: 'Goldplay Reg';
     src: url('../fonts/GoldplayAlt-Regular.woff2') format('woff2'),
          url('../fonts/GoldplayAlt-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -15,21 +15,27 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Goldplay Bold';
+    src: url('../fonts/Goldplay-Bold.woff2') format('woff2'),
+         url('../fonts/Goldplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 body{
-    font-family: Goldplay Alt, sans-serif;
+    font-family: 'Goldplay Bold', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
     box-sizing: border-box;
     overflow-x: hidden; 
-    background: linear-gradient(to right, #0b1a38 5%, #6638B6 95%);
+    background: linear-gradient(to right, #0b1a38 5%, #562ed9 95%);
     background-size: cover;
     background-position: center;
 
 
 }
 .navbar {
-    background-color: #0b1a38; 
+    background-color: #562ed9; 
     padding:15px 0;
     display: flex;
     align-items: center;
@@ -43,7 +49,7 @@ body{
 }
 
 .navbar-container {
-    font-family: Golplay Alt, sans-serif;
+    font-family: 'Golplay Bold', sans-serif;
     width: 90%; 
     max-width: 1200px; 
     margin: 0 auto;
@@ -74,23 +80,23 @@ body{
 
 .navbar-nav .nav-link {
     color: #ffffff; 
-    font-size: 18px;
+    font-size: 16px;
     text-transform: capitalize;
     text-decoration: none; 
     transition: color 0.3s;
     padding: 5px 0;
-    font-family: Goldplay Alt, sans-serif;
+    font-family: 'Goldplay Reg', sans-serif;
     
 }
 
 .navbar-nav .nav-link:hover {
-    color: #6638B6; 
-    border-bottom: 2px solid #6638B6; 
+    color: #F0B323; 
+    border-bottom: 2px solid #F0B323; 
 }
 
 .btn-contact-us {
-    background-color: #6638B6; 
-    color: #ffffff;
+    background-color: #F0B323; 
+    color: #562ed9;
     font-size: 16px;
     font-weight: bold; 
     padding: 10px 20px; 
@@ -101,8 +107,7 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-.btn-contact-us:hover {
-    
+.btn-contact-us:hover { 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -111,9 +116,9 @@ body{
     position: absolute;
     top: 100%; 
     left: 0;
-    background-color: #0b1a38; 
+    background-color: #390091; 
     padding: 10px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
     z-index: 1000;
     border-radius: 5px;
     width: 240px;
@@ -135,11 +140,11 @@ body{
 }
 
 .dropdown-item:hover {
-    background-color: #6638B6; 
+    background-color: #F0B323; 
     color: #ffffff; 
 }
 .logo-img{
-    width: 210px;
+    width: 150px;
 }
 
 
@@ -149,9 +154,10 @@ ul {
     padding: 0;
 }
 
-a {
+.navbar-container a {
     text-decoration: none;
-    font-family: Goldplay Alt, sans-serif !important;
+    font-family: Goldplay Reg, sans-serif;
+    font-size: 14px;
 }
 
 /* Estilo del Header */
@@ -186,7 +192,7 @@ a {
 }
 
 .header-text h1 .highlight {
-    color: #6638B6;
+    color: #F0B323;
     font-size: 90px;
 }
 
@@ -194,6 +200,8 @@ a {
     color: #6638B6;
     animation: blink 1s steps(1) infinite;
 }
+
+
 
 @keyframes blink {
     50% {
@@ -215,8 +223,9 @@ a {
 
 .icon-item span {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 15px;
+    font-family: Goldplay Reg, sans-serif;
 }
 
 /* Imagen del Header */
@@ -272,9 +281,9 @@ a {
     margin-top: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     border-radius: 10px; 
-    background: #ffffff;
+    background: transparent;
     overflow: hidden; 
-    position: relative; 
+   text-align: center; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
@@ -306,11 +315,12 @@ a {
 
 /* Bloque individual */
 .info-block {
+    position: relative;
     display: flex;
     flex-direction: row;
     max-width: 1250px;
     align-items: center;
-    background: #0b1a3850;
+    background: #390091;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -329,11 +339,29 @@ a {
 .info-image {
     flex: 1;
     padding: 20px;
-    max-width: 35%;
+    max-width: 35%; 
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.img-icono {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+}
+
+.img-icono img {
+    width: 30px; 
+    height: auto; 
+}
+.img-skill{
+display: flex;
+width: 30px;
+height: 30px;
+margin-left: 2px;
+margin-right: 2px;
 }
 
 .info-image img {
@@ -348,6 +376,7 @@ a {
     flex: 1;
     padding: 20px 30px;
     color: white;
+    
 }
 
 .info-text h3 {
@@ -389,18 +418,27 @@ a {
 
 /* Sección Socios, Aliados y Clientes */
 .socios-aliados {
+    height: 240px;
     margin-top: 200px;
-    padding: 50px 20px;
-    background: linear-gradient(to bottom, #6638B6, #cec1ef);
+    padding-bottom: 20px;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #333;
 }
+.titulo-socios{
+    border-radius: 10px #F0B323;
+    box-sizing: 10px;
+}
 
 .socios-aliados h2 {
+    border-radius: 5px;
+    
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 40px;
-    color: #0b1a38;
+    color: #F0B323;
 }
 
 .logos-container {
@@ -413,6 +451,7 @@ a {
 
 .logo-item img {
     width: 150px;
+    height: 150px;
     height: auto;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
     transition: transform 0.3s ease, opacity 0.3s ease; 
@@ -446,7 +485,7 @@ p {
 
 .footer-line {
     height: 2px;
-    background-color: #6638B6; 
+    background-color: #F0B323; 
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -485,9 +524,13 @@ p {
 }
 
 .footer-social {
+    display: flex;
+    flex-direction: column;
     margin-right: 100px;
     margin-top: -10px;
     text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .footer-social h4 {
@@ -533,6 +576,20 @@ p {
 
 .footer-bottom span {
     font-weight: bold;
+}
+.btn-siguenos {
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    background-color: #F0B323; 
+    color: #562ed9;
+    font-size: 16px;
+    font-weight: bold; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    text-transform: capitalize;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 
