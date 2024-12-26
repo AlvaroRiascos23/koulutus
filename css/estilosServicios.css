@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Goldplay Reg';
+    src: url('../fonts/GoldplayAlt-Regular.woff2') format('woff2'),
+         url('../fonts/GoldplayAlt-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* SECCIÓN DE SERVICIOS */
+.services {
+    padding: 60px 0;
+}
+
+.services-container {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 95%;
+}
+
+.service {
+    background-color: #390091;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: end;
+    width: 25%;
+    
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service-img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: white;
+}
+
+.service p {
+    font-size: 16px;
+    text-align: justify;
+    color: white;
+}
+
+
+/* Estilo base del modal */
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Evitar que el fondo se mueva */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #390091;
+    margin: 7% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-height:400px ;
+    max-width: 1100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Aseguramos que el scroll se mantenga dentro del contenido */
+}
+
+/* Header del modal */
+.modal-header {
+    padding: 10px;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    width: 99%;
+    
+}
+
+/* Cuerpo del modal - Contenido desplazable */
+.modal-body {
+    padding: 20px;
+    
+    background-color: #0b1a3800;
+    border-radius: 10px;
+    max-height: 55vh; /* Limitar la altura para hacer scroll si es necesario */
+    overflow-y: auto;
+    margin: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #562ed9 #1e2a47; /* Color para la barra de desplazamiento */
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #7c5ce2;
+    border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background-color: #1e2a47;
+}
+
+/* Estilo de los elementos dentro del modal */
+.feature {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #7c5ce2;
+    background: rgba(255, 255, 255, 0.016);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature h3 .icon {
+    font-size: 24px;
+    color: #7c5ce2;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #e1d8f1;
+    margin: 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Botón para cerrar */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botón de la modal */
+.btn-modal {
+    font-family: 'Golplay Bold', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #F0B323;
+    color: #390091;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-modal:hover {
+    background-color: #7f61df;
+}
+
